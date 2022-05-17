@@ -1,0 +1,205 @@
+body{
+    background-color: lightgray;
+}
+
+
+@font-face {
+    font-family:font_bold ;
+    src: url(/fonts/font_bold.ttf);
+}
+
+@font-face {
+    font-family:font_regular ;
+    src: url(/fonts/font_regular.ttf);
+}
+
+header figure{
+
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+header{
+    padding-bottom: 50px;
+}
+h1{
+    margin-left: auto;
+    margin-right: auto;
+   text-align: center;
+   padding-top: 3.5%;
+   font-size: 4.5em;
+   font-family: font_bold;
+   
+}
+.div1{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:20px;
+    background-color: lightgray;
+    height: 100px;
+    width: 90%;
+    border-style:solid;
+    border-width:2px;
+    border-color: black;
+    border-radius: 15px;
+}
+
+.div2{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lightgray;
+    height: 800px;
+    width: 90%;
+    border-style:solid;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 15px;
+}
+
+.image1{
+    margin-left: -5%;
+    margin-right: auto;
+}
+
+.pick{
+    border-style: solid;
+    border-width: 2px;
+    background-color: oaqua;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+
+}
+
+
+section h1{
+    margin-left: auto;
+    margin-right: auto;
+   text-align: center;
+   padding-top: 0.5px;
+   font-size: 4.5em;
+   font-family: font_bold;
+   margin-top: 20px;
+   
+}
+
+.nav_bar{
+    display:inline-block;
+    background-color: aliceblue;
+    text-align: center;
+    color:black;
+    padding-left: 170px;
+    padding-right: 166.95px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-family:font_regular;
+    bottom: 100px;
+    border-style:solid;
+    text-decoration:none;
+    border-radius: 10px;
+
+}
+
+.nav_bar:hover{
+    background: lightblue;
+}
+
+h2{
+   font-size: 1.3em;
+   font-family: font_bold;
+   margin-left: 15px;
+   margin-top: 1px;
+   
+}
+
+.label1{
+    margin-left: 48%;
+    font-family: font_bold;
+    font-size: 20px;
+}
+
+.label2{
+    margin-left: 44%;
+    font-family: font_bold;
+    font-size: 20px;
+}
+
+.label3{
+    margin-left: 47%;
+    font-family: font_bold;
+    font-size: 20px;
+}
+
+div input{
+    margin-left: 15%;
+    height: 20px;
+    width: 70%;
+    font-family: font_regular;
+    font-size: 20px;
+    border-style: solid;
+    border-width:5px;
+    border-color: black;
+    border-radius: 15px;
+}
+
+section h1{
+    text-align: center;
+    font-size: 3.5em;
+    font-family: font_bold;
+ }
+
+ .button0{
+    font-family: font_bold;
+    position: absolute;
+    top: 142%;
+    right: 15%;
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.button1{
+    font-family: font_bold;
+    position: absolute;
+    top: 66.8%;
+    right: 38%;
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.button2{
+    background-color: lightblue;
+    font-family: font_bold;
+    padding: 18px;
+    position: absolute;
+    top: 155%;
+    right: 800px;
+    border-radius: 15px;
+    font-weight: 550;
+    font-size: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.button3{
+    background-color: rgb(235, 128, 128);
+    font-family: font_bold;
+    padding: 18px;
+    position: absolute;
+    top: 155%;
+    right: 250px;
+    border-radius: 15px;
+    font-weight: 550;
+    font-size: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+

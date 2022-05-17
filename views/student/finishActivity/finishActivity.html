@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="finish_activity.css" rel="stylesheet">
+    <title>Finalizar Actividad</title>
+</head>
+<body>
+    <header>
+        <figure>
+           <a href="/views/student/homePage/homePage.html"><img src=https://firebasestorage.googleapis.com/v0/b/arittedia.appspot.com/o/shield.webp?alt=media&token=ea0067cf-c35f-4884-8d4f-cca0b93fec2b width="200" height="250"> </a>
+        </figure>
+        <h1>ARITTEDIA</h1>
+    </header>
+    <section>
+        <div>
+            <h1>Finalizaste</h1>
+            <figure>  
+                <img src="https://firebasestorage.googleapis.com/v0/b/arittedia.appspot.com/o/Bien%20hecho.png?alt=media&token=9688749d-6a44-439e-80e7-46f74c3538fe" height="350" width="350"></figure>
+            </figure>
+            <form>
+                <label for="nameActivity">
+                    Nombre de la actividad
+                </label>
+                    <br><input type="text" id="nameActivity" name="nameActivity" required
+                    minlength="5" maxlength="100" size="45" readonly><br><br>
+                <label for="rightAnswers">
+                    Numero de aciertos
+                </label>
+                <br><input type="number" id="rightAnswers" name="rightAnswers" required
+                    minlength="5" maxlength="100" size="45" readonly><br><br>
+                <label for="note">
+                    Nota
+                </label>
+                <br><input type="number" id="note" name="note" required
+                    minlength="5" maxlength="100" size="45" readonly><br><br>      
+            </form>
+            <form action="/views/student/homePage/homePage.html">
+                <button>Finalizar Revisión</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

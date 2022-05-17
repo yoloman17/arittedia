@@ -1,0 +1,284 @@
+body{
+    background:linear-gradient(to right,rgba(138, 95, 218, 0.8),rgba(238, 237, 237, 0.856),rgb(82, 103, 226)
+    ,rgba(80, 216, 80, 0.678));
+    background-size: 400% 400%;
+    position: relative;
+    animation: change 40s ease infinite;
+    color: black;
+}
+
+@font-face {
+    font-family:font_bold ;
+    src: url(/fonts/font_bold.ttf);
+}
+
+@font-face {
+    font-family:font_regular ;
+    src: url(/fonts/font_regular.ttf);
+}
+
+.grid-container{
+    display:grid;
+    grid-template-columns: 250px auto 330px;
+}
+
+.img1{
+    width:180px; 
+    height:250px;
+}
+
+.img2{
+    margin-top:-5%;
+    width:500px; 
+    height:500px;
+    animation: movement 2.5s linear infinite;
+}
+
+.div4{
+    grid-column: 1/span 3;
+    text-align: center;
+}
+
+.div5{
+    grid-column: 1/span 3;
+    text-align: center;
+}
+
+.div6{
+    grid-column: 1/span 3;
+    text-align: center;
+}
+
+h1{
+    margin-left: 150px;
+    margin-top: 120px;
+   text-align: center;
+   padding-top: 3.5%;
+   font-size: 5.5em;
+   font-family: font_bold;
+   
+}
+
+.button1{
+    background-color: rgb(82, 103, 226);
+    font-family: font_bold;
+    padding: 18px;
+    position: absolute;
+    top: 25px;
+    right: 195px;
+    border-radius: 15px;
+    border-color: black;
+    font-weight: 550;
+    font-size: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    color: white;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.button1 span{
+    position:relative;
+    z-index:2;
+    transition: .3s ease all;
+}
+
+.button1::after{
+    content:"";
+    width:100%;
+    position:absolute;
+    z-index:1;
+    top:0;
+    left:calc(-100% - 60px);
+    border-bottom: 60px solid #286cff;
+    border-right: 60px solid transparent;
+    transition: .4s ease-in-out all;
+}
+
+.button1:hover::after{
+    left:0;
+}
+
+.button2{
+    background-color: rgba(138, 95, 218, 0.8);
+    padding: 18px;
+    position: absolute;
+    top: 25px;
+    right: 10px;
+    border-radius: 15px;
+    border-color:black;
+    font-family: font_bold;
+    font-weight: 550;
+    font-size: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    color:white;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.button2 span{
+    position:relative;
+    z-index:2;
+    transition: .3s ease all;
+}
+
+.button2::after{
+    content:"";
+    width:100%;
+    position:absolute;
+    z-index:1;
+    top:0;
+    left:calc(-100% - 60px);
+    border-bottom: 60px solid rgb(113, 75, 187);
+    border-right: 60px solid transparent;
+    transition: .4s ease-in-out all;
+}
+
+.button2:hover::after{
+    left:0;
+}
+
+p{
+   text-align: center; 
+   font-size: 2.3em;
+   margin-left: 50px;
+   font-family: font_regular;
+   margin-right: auto;
+   margin-left: auto;
+}
+
+footer p{
+    text-align: center;
+    font-size: 1em; 
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.bubble{
+
+    border-radius: 50%;
+    background: darkgrey;
+    opacity: .3;
+    position:absolute;
+    bottom:-150;
+    animation: bubbles 3s linear infinite;
+}
+
+.bubble:nth-child(1){
+    width: 80px;
+    height: 80px;
+    left: 5%;
+    animation-duration: 3s;
+    animation-delay: 3s;
+}
+
+.bubble:nth-child(2){
+    width: 100px;
+    height: 100px;
+    left: 35%;
+    animation-duration: 3s;
+    animation-delay: 5s;
+}
+
+.bubble:nth-child(3){
+    width: 20px;
+    height: 20px;
+    left: 15%;
+    animation-duration: 1.5s;
+    animation-delay: 7s;
+}
+
+.bubble:nth-child(4){
+    width: 50px;
+    height: 50px;
+    left: 90%;
+    animation-duration: 6s;
+    animation-delay: 3s;
+}
+
+.bubble:nth-child(5){
+    width: 70px;
+    height: 70px;
+    left: 65%;
+    animation-duration: 3s;
+    animation-delay: 1s;
+}
+
+.bubble:nth-child(6){
+    width: 20px;
+    height: 20px;
+    left: 50%;
+    animation-duration: 4s;
+    animation-delay: 5s;
+}
+
+.bubble:nth-child(7){
+    width: 20px;
+    height: 20px;
+    left: 50%;
+    animation-duration: 4s;
+    animation-delay: 5s;
+}
+
+.bubble:nth-child(8){
+    width: 100px;
+    height: 100px;
+    left: 52%;
+    animation-duration: 5s;
+    animation-delay: 5s;
+}
+
+.bubble:nth-child(9){
+    width: 65px;
+    height: 65px;
+    left: 51%;
+    animation-duration: 3s;
+    animation-delay: 2s;
+}
+
+.bubble:nth-child(10){
+    width: 40px;
+    height: 40px;
+    left: 35%;
+    animation-duration: 3s;
+    animation-delay: 4s;
+}
+
+@keyframes change{
+    0%{background-position: 0 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0 50%;}
+}
+
+
+@keyframes bubbles{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    30%{
+        transform: translateX(30px);
+    }
+    50%{
+        opacity:.4;
+    }
+    100%{
+        bottom:100vh;
+        opacity:0;
+    }
+}
+
+@keyframes movement{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}

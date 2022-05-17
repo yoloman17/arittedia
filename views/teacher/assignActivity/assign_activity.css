@@ -1,0 +1,189 @@
+body{
+    background-color: lightgray;
+}
+
+@font-face {
+    font-family:font_bold ;
+    src: url(/fonts/font_bold.ttf);
+}
+
+@font-face {
+    font-family:font_regular ;
+    src: url(/fonts/font_regular.ttf);
+}
+
+header h1{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 3.5%;
+    font-size: 4.5em;
+    font-family: font_bold;
+}
+
+header figure{
+    position: absolute;
+    top: 10px;
+    left: 0px;
+}
+
+.mainDiv{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lightgray;
+    height: 1050px;
+    width: 700px;
+    border-style:solid;
+    border-width:5px;
+    border-color: black;
+    border-radius: 25px;
+}
+
+section h1{
+    text-align: center;
+    font-size: 4.8em;
+    font-family: font_bold;
+ }
+
+ section figure{
+    
+    text-align: center;
+    margin-bottom: 5px;
+}
+ 
+
+.labelTittle1{
+    margin-left: 21%;
+    font-family: font_bold;
+    font-size: 28.5px;
+}
+
+.input1{
+    margin-left: 21%;
+    height: 20px;
+    width: 405.8px;
+    font-family: font_regular;
+    font-size: 20px;
+    border-style: solid;
+    border-width:5px;
+    border-color: black;
+    border-radius: 15px;
+}
+
+.div2{
+    margin-left: 20%;
+    height: 50px;
+    width: 170px;
+    font-family: font_regular;
+    font-size: 20px;
+}
+
+.labelTittle2{
+    margin-left: 35%;
+    font-family: font_bold;
+    font-size: 28.5px;
+}
+
+.input2{
+    width:150px;
+    margin-left:8px;
+    font-family: font_regular;
+    font-size: 20px;
+    border-style: solid;
+    border-width:5px;
+    border-color: black;
+    border-radius: 15px;
+}
+
+.div3{
+    margin-left: 53%;
+    margin-top: -7%;
+    height: 50px;
+    width: 170px;
+    font-family: font_regular;
+    font-size: 20px;
+}
+
+.input3{
+    width:150px;
+    margin-left:28px;
+    font-family: font_regular;
+    font-size: 20px;
+    border-style: solid;
+    border-width:5px;
+    border-color: black;
+    border-radius: 15px;
+}
+
+.labelSubTittle1{
+    margin-left:40%;
+    font-family: font_bold;
+    font-size: 20px;
+}
+
+.labelSubTittle2{
+    margin-left:55%;
+    font-family: font_bold;
+    font-size: 20px;
+}
+
+.labelTittle3{
+    margin-left: 37%;
+    font-family: font_bold;
+    font-size: 28.5px;
+}
+
+.div4{
+    margin-top: -3%;
+    margin-left: 20%;
+    height: 50px;
+    width: 170px;
+    font-family: font_regular;
+    font-size: 20px;
+}
+
+.input4{
+    width:150px;
+    margin-left:8px;
+    font-family: font_regular;
+    font-size: 20px;
+    border-style: solid;
+    border-width:5px;
+    border-color: black;
+    border-radius: 15px;
+}
+
+.div5{
+    margin-left: 54%;
+    margin-top: -3.91%;
+    height: 50px;
+    width: 170px;
+    font-family: font_regular;
+    font-size: 20px;
+}
+
+.input5{
+    width:150px;
+    margin-left:28px;
+    font-family: font_regular;
+    font-size: 20px;
+    border-style: solid;
+    border-width:5px;
+    border-color: black;
+    border-radius: 15px;
+}
+
+ button{
+    font-family: font_bold;
+    padding: 18px;
+    position: absolute;
+    top: 165%;
+    right: 41%;
+    border-radius: 15px;
+    font-weight: 550;
+    font-size: 20px;
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-right: auto;
+    margin-left: auto;
+}
