@@ -1,0 +1,88 @@
+@font-face {
+    font-family:font_bold ;
+    src: url(/fonts/font_bold.ttf);
+}
+
+@font-face {
+    font-family:font_regular ;
+    src: url(/fonts/font_regular.ttf);
+}
+
+div{
+    font-family: font_regular;
+    font-size: 30px;
+    margin:20px;
+}
+
+.div4{
+    border-style: dotted;
+    border-radius: 5px;
+    margin:20px;
+    font-family: font_bold;
+    font-size: 20px;
+}
+
+input{
+    font-family: font_bold;
+}
+
+.complete{
+    margin: 20px;
+    font-family: font_bold;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    grid-column-gap: 14px;
+    grid-row-gap: 15px;
+    text-align: center;
+}
+
+.div5{
+    border-style: dotted;
+    border-radius: 5px;
+    margin:20px;
+    font-family: font_bold;
+    font-size: 20px;
+}
+
+.div6{
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    border-style: solid;
+    border-radius: 5px;
+    font-family: font_bold;
+    font-size: 20px;
+}
+
+.div601{
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    margin-left: 100%;
+    margin-top: -54%;
+    border-style: solid;
+    border-radius: 5px;
+    font-family: font_bold;
+    font-size: 20px;
+}
+
+.div602{
+    text-align: center;
+    margin-left: 101%;
+    margin-top: -5%;
+    height: 50px;
+    width: 50px;
+    border-style: solid;
+    border-radius: 5px;
+    font-family: font_bold;
+    font-size: 20px;
+}
+
+
+hr{
+    width: 36.5%;
+    border-color: black;
+    position: absolute;
+
+}
