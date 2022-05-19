@@ -37,10 +37,66 @@ input{
     text-align: center;
 }
 
-.div5{
+.number1{
+    border-style:solid;
+    border-color: black;
+    border-radius: 15px;
+    font-family: font_regular;
+    font-size:20px;
+    text-align: center;
+    width:50px;
+}
+
+.icons{
     border-style: dotted;
     border-radius: 5px;
-    margin:20px;
+    text-align: center;
+}
+
+.minor{
+    width:50px;
+    height:50px;
+    color:black;
+    cursor:move;
+}
+
+.minor.selected{
+    transform: scale(1.2) rotate(-2deg);
+    box-shadow: 0px 0px 20px rgba(149, 153, 159, .16);
+
+}
+
+
+.higher{
+    width:50px;
+    height:50px;
+    color:black;
+    cursor:move;
+}
+
+.higher.selected{
+    transform: scale(1.2) rotate(-2deg);
+    box-shadow: 0px 0px 20px rgba(149, 153, 159, .16);
+
+}
+
+.equal{
+    width:50px;
+    height:50px;
+    color:black;
+    cursor:move;
+}
+
+.equal.selected{
+    transform: scale(1.2) rotate(-2deg);
+    box-shadow: 0px 0px 20px rgba(149, 153, 159, .16);
+
+}
+
+.div5{
+    border-style: dotted;
+    margin-top: 1%;
+    border-radius: 5px;
     font-family: font_bold;
     font-size: 20px;
 }
@@ -59,23 +115,43 @@ input{
     text-align: center;
     height: 50px;
     width: 50px;
-    margin-left: 100%;
-    margin-top: -54%;
+    margin-left: -74%;
+    margin-top: 8%;
+    border-style: solid;
+    border-radius: 5px;
+    font-family: font_bold;
+    font-size: 20px;
+    background-color: white;
+}
+
+.div602{
+    text-align: center;
+    margin-left: -156%;
+    margin-top: 8%;
+    height: 50px;
+    width: 50px;
     border-style: solid;
     border-radius: 5px;
     font-family: font_bold;
     font-size: 20px;
 }
 
-.div602{
-    text-align: center;
-    margin-left: 101%;
-    margin-top: -5%;
-    height: 50px;
-    width: 50px;
-    border-style: solid;
-    border-radius: 5px;
+.complete2{
+    display:grid;
+    grid-auto-flow:row;
+    grid-template-columns: 25% 25% 25% 25% 25% 25%;
+    grid-auto-columns: auto;
+    grid-row-gap: 15px;    
+    grid-column-gap: 10px;
+}
+
+.confirm{
     font-family: font_bold;
+    padding: 18px;
+    top: 1%;
+    margin-left: -270%;
+    border-radius: 15px;
+    cursor:pointer;
     font-size: 20px;
 }
 
