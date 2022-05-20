@@ -84,9 +84,21 @@ body{
 }
 
 .button3{
-    border-radius:50%;
-    height:50px;
-    width:50px;
+    font-family: font_bold;
+    padding: 18px;
+    position: absolute;
+    top: 133%;
+    right: 40%;
+    border-radius: 15px;
+    font-weight: 550;
+    font-size: 20px;
+    margin-bottom: 10%;
+    margin-top: auto;
+    margin-right: auto;
+    margin-left: auto;
+    cursor:pointer;
+    display:none;
+
 }
 
 .play{

@@ -106,12 +106,16 @@ function disableElements(){
 
 }
 
-//------------------enable stop------------------
+//------------------enable stop, button------------------
 
 function enableElements(){
     //stop
     document.getElementById("stop").style.color="black";
-    document.getElementById("stop").style.cursor="pointer";  
+    document.getElementById("stop").style.cursor="pointer";
+
+    //finishActivity
+    document.getElementById("finishActivity").style.display="inline";
+
 }
 
 //------------------enable elements------------------
@@ -181,12 +185,15 @@ function enableElements2(){
 
 }
 
-//------------------disable stop------------------
+//------------------disable stop, button------------------
 
 function disableElements2(){
     //stop
     document.getElementById("stop").style.color="gray";
-    document.getElementById("stop").style.cursor="auto";     
+    document.getElementById("stop").style.cursor="auto"; 
+    
+    //finishActivity
+    document.getElementById("finishActivity").style.display="none";
 }
 
 

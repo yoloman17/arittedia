@@ -15,11 +15,11 @@ const position10 = document.getElementById("position10");
 const position11 = document.getElementById("position11");
 const position12 = document.getElementById("position12");
 const position13 = document.getElementById("position13");
+const btnconfirm = document.getElementById('confirm');
 
 
 
-
-new Sortable(elements,{
+Sortable.create(elements,{
     group: {
         name: 'posicion',
         pull: 'clone',
@@ -36,90 +36,106 @@ const confirmdiv1 = Sortable.create(position,{
     disabled: false
 });
 
-new Sortable(position2,{
+const confirmdiv2 = Sortable.create(position2,{
     group: 'posicion',
     filter: '.filtered',
     animation: 150,
 });
 
-new Sortable(position3,{
+const confirmdiv3 = Sortable.create(position3,{
     group: 'posicion',
     filter: '.filtered',
     animation: 150,
 });
 
-new Sortable(position4,{
+const confirmdiv4 = Sortable.create(position4,{
     group: 'posicion',
     filter: '.filtered',
     animation: 150,
-    dragoverBubble: true,
 });
 
-new Sortable(position5,{
+const confirmdiv5 = Sortable.create(position5,{
     group: 'posicion',
     filter: '.filtered',
     animation: 150,
-    dragoverBubble: true,
 });
 
-new Sortable(position6,{
+const confirmdiv6 = Sortable.create(position6,{
     group: 'posicion',
     filter: '.filtered',
     animation: 150,
-    dragoverBubble: true,
 });
 
-new Sortable(position7,{
+const confirmdiv7 = Sortable.create(position7,{
     group: 'posicion',
     filter: '.filtered',
     animation: 150,
-    dragoverBubble: true,
 });
 
-new Sortable(position8,{
+const confirmdiv8 = Sortable.create(position8,{
     group: 'posicion',
     filter: '.filtered',
     animation: 150,
-    dragoverBubble: true,
 });
 
-new Sortable(position9,{
+const confirmdiv9 = Sortable.create(position9,{
     group: 'posicion',
     filter: '.filtered',
     animation: 150,
-    dragoverBubble: true,
 });
 
-new Sortable(position10,{
+const confirmdiv10 = Sortable.create(position10,{
     group: 'posicion',
     filter: '.filtered',
     animation: 150,
-    dragoverBubble: true,
 });
 
-new Sortable(position11,{
+const confirmdiv11 = Sortable.create(position11,{
     group: 'posicion',
     filter: '.filtered',
     animation: 150,
-    dragoverBubble: true,
 });
 
-new Sortable(position12,{
+const confirmdiv12 = Sortable.create(position12,{
     group: 'posicion',
     filter: '.filtered',
     animation: 150,
-    dragoverBubble: true,
 });
 
-new Sortable(position13,{
+const confirmdiv13 = Sortable.create(position13,{
     group: 'posicion',
     filter: '.filtered',
     animation: 150,
-    dragoverBubble: true,
 });
 
-const btnconfirm = document.getElementById('confirm');
+
 btnconfirm.addEventListener('click',()=>{
     const state = confirmdiv1.option('disabled');
-    confirmdiv1.option('disabled', !state);
+    confirmdiv1.option('disabled', !state);    
+    const state2 = confirmdiv2.option('disabled');
+    confirmdiv2.option('disabled', !state);    
+    const state3 = confirmdiv3.option('disabled');
+    confirmdiv3.option('disabled', !state);
+    const state4 = confirmdiv4.option('disabled');
+    confirmdiv4.option('disabled', !state);
+    const state5 = confirmdiv5.option('disabled');
+    confirmdiv5.option('disabled', !state);
+    const state6 = confirmdiv6.option('disabled');
+    confirmdiv6.option('disabled', !state);
+    const state7 = confirmdiv7.option('disabled');
+    confirmdiv7.option('disabled', !state);
+    const state8 = confirmdiv8.option('disabled');
+    confirmdiv8.option('disabled', !state);
+    const state9 = confirmdiv9.option('disabled');
+    confirmdiv9.option('disabled', !state);
+    const state10 = confirmdiv10.option('disabled');
+    confirmdiv10.option('disabled', !state);
+    const state11 = confirmdiv11.option('disabled');
+    confirmdiv11.option('disabled', !state);
+    const state12 = confirmdiv12.option('disabled');
+    confirmdiv12.option('disabled', !state);
+    const state13 = confirmdiv13.option('disabled');
+    confirmdiv13.option('disabled', !state);
+
 })
+
