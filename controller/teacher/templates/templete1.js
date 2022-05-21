@@ -1,7 +1,32 @@
+var cont;
+
+//Activity 1
+
+let activity1=[10];
+
+//Activity 2
+let operation1=[6];
+let operation2=[6];
+let operation3=[6];
+let operation4=[6];
+let operation5=[6];
+let operation6=[6];
+let operation7=[6];
+let operation8=[6];
+let operation9=[6];
+let operation10=[6];
+let operation11=[6];
+let operation12=[6];
+let operation13=[6];
+let operation14=[6];
+let operation15=[6];
+let operation16=[6];
+
 //------------------get buttons------------------
 
 const play2=document.getElementById("play");
 const stop2=document.getElementById("stop");
+const finisActivityTemplate1=document.getElementById("finishActivity");
 
 //------------------play------------------
 
@@ -11,8 +36,11 @@ play2.addEventListener('click',(e)=>{
 
 function clickPlay2(){
     if(checkPlay==true){
+        getValuesActivity1();
+        getValuesActivity2();
         disableInputs();
         enableInputs();
+        disableTexts();
     }
 }
 
@@ -26,8 +54,16 @@ function clickStop2(){
     if(checkStop==true){
         disableInputs2();
         enableInputs2();
+        enableTexts()
     }
 }
+
+//------------------finish activity------------------
+
+finisActivityTemplate1.addEventListener('click',(e)=>{
+    checkActivity1();
+    checkActivity2();
+})
 
 //------------------disable inputs------------------
 
@@ -115,13 +151,23 @@ function disableInputs(){
 
 }
 
+//------------------disable texts------------------
+
+function disableTexts(){
+    for(i=1;i<=2;i++){
+        document.getElementById("text"+i).contentEditable=false;
+    }
+}
+
+
 //------------------enable inputs------------------
 
 function enableInputs(){
 
     //complete
     for(i=1;i<=10;i++){
-        document.getElementById("number"+i).disabled=false;
+        document.getElementById("number"+i).value="";
+        document.getElementById("number"+i).placeholder=i+".";
     }
 
     //operation 1
@@ -206,13 +252,26 @@ function enableInputs(){
 
 }
 
+//------------------enable texts------------------
+
+function enableTexts(){
+    for(i=1;i<=2;i++){
+        document.getElementById("text"+i).value;
+    }
+}
+
 //------------------disable inputs2------------------
 
 function disableInputs2(){
 
     //complete
     for(i=1;i<=10;i++){
-        document.getElementById("number"+i).disabled=true;
+        document.getElementById("number"+i).disabled="";
+        document.getElementById("number"+i).placeholder="";
+        document.getElementById("number"+i).value=activity1[i];
+        document.getElementById("number"+i).style.color="black";
+        document.getElementById("number"+i).style.borderColor="black";
+
     }
 
     //operation 1
@@ -382,4 +441,209 @@ function enableInputs2(){
         document.getElementById("num"+i).disabled=false;
     }
 }
+
+
+//get values activity 1
+
+function getValuesActivity1(){
+    cont=1;
+    for(i=0;i<10;i++){
+        activity1.splice(i,1,document.getElementById("number"+cont).value);
+        cont++;
+    }
+}
+
+//check activity 1
+
+function checkActivity1(){
+    let solutionActivity1=[10];
+
+    cont=1;
+    for(i=0;i<10;i++){
+        solutionActivity1.splice(i,1,document.getElementById("number"+cont).value);
+
+        if(activity1[i]==solutionActivity1[i]){
+            document.getElementById("number"+cont).style.color="green";
+            document.getElementById("number"+cont).style.borderColor="green";
+            document.getElementById("number"+cont).disabled="true";
+
+        }
+        else{
+            document.getElementById("number"+cont).style.color="red";
+            document.getElementById("number"+cont).style.borderColor="red";
+            document.getElementById("number"+cont).disabled="true";            
+        }
+        cont++;
+    }
+}
+
+//get values activity 2
+
+function getValuesActivity2(){
+
+    //operation 1
+    cont=1;
+    for(i=0;i<6;i++){
+        operation1.splice(i,1,document.getElementById("num"+cont).value);
+        cont++;
+    }
+
+    //operation 2
+    cont=10;
+    for(i=0;i<6;i++){
+        operation2.splice(i,1,document.getElementById("num"+cont).value);
+        cont++;
+    }
+
+    //operation 3
+    cont=19;
+    for(i=0;i<6;i++){
+        operation3.splice(i,1,document.getElementById("num"+cont).value);
+        cont++;
+    }
+
+    //operation 4
+    cont=28;
+    for(i=0;i<6;i++){
+        operation4.splice(i,1,document.getElementById("num"+cont).value);
+        cont++;
+    }
+
+    //operation 5
+    cont=37;
+    for(i=0;i<6;i++){
+        operation5.splice(i,1,document.getElementById("num"+cont).value);
+        cont++;
+    }
+
+    //operation 6
+    cont=46;
+    for(i=0;i<6;i++){
+        operation6.splice(i,1,document.getElementById("num"+cont).value);
+        cont++;
+    }
+
+    //operation 7
+    cont=55;
+    for(i=0;i<6;i++){
+        operation7.splice(i,1,document.getElementById("num"+cont).value);
+        cont++;
+    }
+
+    //operation 8
+    cont=64;
+    for(i=0;i<=6;i++){
+        operation8.splice(i,1,document.getElementById("num"+cont).value);
+        cont++;
+    }
+
+    //operation 9
+    cont=73;
+    for(i=0;i<=6;i++){
+        operation9.splice(i,1,document.getElementById("num"+cont).value);
+        cont++;
+    }
+
+    //operation 10
+    cont=82;
+    for(i=0;i<=6;i++){
+        operation10.splice(i,1,document.getElementById("num"+cont).value);
+        cont++
+    }
+
+    //operation 11
+    cont=91;
+    for(i=0;i<=6;i++){
+        operation11.splice(i,1,document.getElementById("num"+cont).value);
+        cont++;
+    }
+
+    //operation 12
+    cont=100;
+    for(i=0;i<=6;i++){
+        operation12.splice(i,1,document.getElementById("num"+cont).value);
+        cont++;
+    }
+
+    //operation 13
+    cont=109;
+    for(i=0;i<=6;i++){
+        operation13.splice(i,1,document.getElementById("num"+cont).value);
+        cont++;
+    }
+
+    //operation 14
+    cont=118;
+    for(i=0;i<=6;i++){
+        operation14.splice(i,1,document.getElementById("num"+cont).value);
+        cont++;
+    }
+
+    //operation 15
+    cont=127;
+    for(i=0;i<=6;i++){
+        operation15.splice(i,1,document.getElementById("num"+cont).value);
+        cont++;
+    }
+
+    //operation 16
+    cont=136;
+    for(i=0;i<=6;i++){
+        operation16.splice(i,1,document.getElementById("num"+cont).value);
+        cont++;
+    }
+}
+
+//check activity 1
+
+function checkActivity2(){
+    //operation 1
+
+    let resultOperation1=[3];
+    var num1=0,num2=0,result=0;
+
+    cont=7;
+    for(i=0;i<3;i++){
+        resultOperation1.splice(i,1,document.getElementById("num"+cont).value);
+        cont++;
+    }
+
+    for(i=0;i<9;i++){
+
+        if(i<3){
+            num1=num1+parseInt(operation1[i],10);
+        }
+        else if (i<6){
+            num2=num2+parseInt(operation1[i],10);           
+        }
+        else if(i<9){
+            result=result+parseInt(resultOperation1[i],10);
+        }
+
+    }
+    
+    cont=7;
+    for(i=0;i<1;i++){
+        for(j=0;j<3;j++){
+            if((num1+num2)==result){
+                document.getElementById("num"+cont).style.color="green";
+                document.getElementById("num"+cont).style.borderColor="green";
+                document.getElementById("num"+cont).disabled="true";              
+            }
+            else{
+                document.getElementById("num"+cont).style.color="red";
+                document.getElementById("num"+cont).style.borderColor="red";
+                document.getElementById("num"+cont).disabled="true";             
+            }
+            cont++;
+        }
+    }
+}
+
+
+
+
+
+
+
 
