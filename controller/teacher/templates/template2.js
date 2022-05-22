@@ -1,8 +1,8 @@
-/*const minor=document.getElementById("minor");
+const minor=document.getElementById("minor");
 const higher=document.getElementById("higher");
 const equal=document.getElementById("equal");
 const elements = document.getElementById("icons");
-const position = document.getElementById("position");
+const position = document.getElementById("position1");
 const position2 = document.getElementById("position2");
 const position3 = document.getElementById("position3");
 const position4 = document.getElementById("position4");
@@ -23,59 +23,29 @@ const Delete = document.getElementById('delete');
 const item = Sortable.create(elements,{
     group: {
         name: 'posicion',
-        pull: true,
-        put: false 
+        pull: 'clone',
+        put: false, 
+        ghostClass: "sortable-ghost",   
+        removeCloneOnHide: true,
     },
 
     animation: 150,
     sort: true,    
-    store:{
-    set: function(sortable){
-        const order = sortable.toArray();
-        localStorage.setItem('element', order.join('|'));
-        console.log(order);
-    }},
-    get: function(){
-        const order = localStorage.getItem('element');
-        console.log(order);
-    }
+
 });
 
 const confirmdiv1 = Sortable.create(position,{
     group: 'posicion',
     filter: '.filtered',
+    removeCloneOnHide: true,
     animation: 150,
-    /*store:{
-        set: function(sortable){
-            const order = sortable.toArray();
-            localStorage.setItem('element', order.join('|'));
-            //order.splice(0, order.length);
-            
-            console.log(order);
-        }},
-        get: function(){
-            const order = localStorage.getItem('element');
-            localStorage.removeItem('element');
-            console.log(order);
-        }*/
-
-/*});
+});
 
 const confirmdiv2 = Sortable.create(position2,{
     group: 'posicion',
     filter: '.filtered',
     animation: 150,
-    /*store:{
-        set: function(sortable){
-            const order = sortable.toArray();
-            localStorage.setItem('element', order.join('|'));
-        }},
-        get: function(){
-            const order = localStorage.getItem('element');
-            console.log(order);
-            localStorage.removeItem('element');
-        }*/
-/*});
+});
 
 const confirmdiv3 = Sortable.create(position3,{
     group: 'posicion',
@@ -143,7 +113,7 @@ const confirmdiv13 = Sortable.create(position13,{
     animation: 150,
 });
 
-/*const delete1 = Sortable.create(Delete,{
+const delete1 = Sortable.create(Delete,{
     group: {
         name: 'deletes',
         put: true,
@@ -153,11 +123,11 @@ const confirmdiv13 = Sortable.create(position13,{
         console.log('muevo');
     }
 
-});*/
+});
 
-/*Delete.addEventListener('click',()=>{
-    const state = item.option('pull');
-    item.option('pull', !state);
+Delete.addEventListener('click',()=>{
+    const state = item.option('ghostClass' ,);
+    console.log(state);
 });
 
 btnconfirm.addEventListener('click',()=>{
@@ -188,26 +158,7 @@ btnconfirm.addEventListener('click',()=>{
     const state13 = confirmdiv13.option('disabled');
     confirmdiv13.option('disabled', !state);
 
-})*/
+})
 
-const minor=document.getElementById("minor");
-const higher=document.getElementById("higher");
-const equal=document.getElementById("equal");
-const elements = document.getElementById("icons");
-const position = document.getElementById("position");
-const position2 = document.getElementById("position2");
-const position3 = document.getElementById("position3");
-const position4 = document.getElementById("position4");
-const position5 = document.getElementById("position5");
-const position6 = document.getElementById("position6");
-const position7 = document.getElementById("position7");
-const position8 = document.getElementById("position8");
-const position9 = document.getElementById("position9");
-const position10 = document.getElementById("position10");
-const position11 = document.getElementById("position11");
-const position12 = document.getElementById("position12");
-const position13 = document.getElementById("position13");
-const btnconfirm = document.getElementById('confirm');
-const Delete = document.getElementById('delete');
 
 
