@@ -24,6 +24,8 @@ div{
 
 input{
     font-family: font_bold;
+    text-align: center;
+    padding: 15px;
 }
 
 .complete{
@@ -34,7 +36,7 @@ input{
     grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10%;
     grid-column-gap: 14px;
     grid-row-gap: 15px;
-    text-align: center;
+    text-align: start;
 }
 
 .number1{
@@ -42,9 +44,16 @@ input{
     border-color: black;
     border-radius: 15px;
     font-family: font_regular;
-    font-size:20px;
+    font-size:25px;
     text-align: center;
-    width:50px;
+    
+    height: 18px;
+}
+
+.editable{
+    text-align: center;
+    height: 20px;
+    padding: 1px;;
 }
 
 .icons{
@@ -65,6 +74,7 @@ input{
     box-shadow: 0px 0px 20px rgba(149, 153, 159, .16);
 
 }
+
 
 
 .higher{
