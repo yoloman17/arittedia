@@ -24,6 +24,7 @@ const stop3=document.getElementById("stop");
 
 play3.addEventListener('click',(e)=>{
     clearText();
+    drag();
 });
 
 stop3.addEventListener('click',(e) =>{
@@ -65,52 +66,156 @@ function returnText (){
         input1.style.color = "black";
         input1.style.borderColor = "black";
     }
+
     if (input2.value.length == 0){
         input2.value = '585';
+        input2.style.color = "black";
+        input2.style.borderColor = "black";
     }else{
         input2.value = '585';
+        input2.style.color = "black";
+        input2.style.borderColor = "black";
     }
+
     if (input3.value.length == 0){
         input3.value = '394';
+        input3.style.color = "black";
+        input3.style.borderColor = "black";
+    }else{
+        input3.value = '394';
+        input3.style.color = "black";
+        input3.style.borderColor = "black";
     }
+
     if (input4.value.length == 0){
         input4.value = '396';
+        input4.style.color = "black";
+        input4.style.borderColor = "black";
+    }else{
+        input4.value = '396';
+        input4.style.color = "black";
+        input4.style.borderColor = "black";
     }
+
     if (input5.value.length == 0){
         input5.value = '199';
+        input5.style.color = "black";
+        input5.style.borderColor = "black";
+    }else{
+        input5.value = '199';
+        input5.style.color = "black";
+        input5.style.borderColor = "black";
     }
+
     if (input6.value.length == 0){
         input6.value = '201';
+        input6.style.color = "black";
+        input6.style.borderColor = "black";
+    }else{
+        input6.value = '201';
+        input6.style.color = "black";
+        input6.style.borderColor = "black"; 
     }
+
     if (input7.value.length == 0){
         input7.value = '377';
+        input7.style.color = "black";
+        input7.style.borderColor = "black";
+    }else{
+        input7.value = '377';
+        input7.style.color = "black";
+        input7.style.borderColor = "black";
     }
+
     if (input8.value.length == 0){
         input8.value = '379';
+        input8.style.color = "black";
+        input8.style.borderColor = "black";
+    }else{
+        input8.value = '379';
+        input8.style.color = "black";
+        input8.style.borderColor = "black";
     }
+
     if (input9.value.length == 0){
         input9.value = '894';
+        input9.style.color = "black";
+        input9.style.borderColor = "black";
+    }else{
+        input9.value = '894';
+        input9.style.color = "black";
+        input9.style.borderColor = "black";
     }
+
     if (input10.value.length == 0){
         input10.value = '896';
+        input10.style.color = "black";
+        input10.style.borderColor = "black";
+    }else{
+        input10.value = '896';
+        input10.style.color = "black";
+        input10.style.borderColor = "black";
+
     }
+
     if (input11.value.length == 0){
         input11.value = '776';
+        input11.style.color = "black";
+        input11.style.borderColor = "black";
+    }else{
+        input11.value = '776';
+        input11.style.color = "black";
+        input11.style.borderColor = "black";
     }
+
     if (input12.value.length == 0){
         input12.value = '778';
+        input12.style.color = "black";
+        input12.style.borderColor = "black";
+    }else{
+        input12.value = '778';
+        input12.style.color = "black";
+        input12.style.borderColor = "black";
     }
+
     if (input13.value.length == 0){
         input13.value = '677';
+        input13.style.color = "black";
+        input13.style.borderColor = "black";
+    }else{
+        input13.value = '677';
+        input13.style.color = "black";
+        input13.style.borderColor = "black";
     }
+
     if (input14.value.length == 0){
         input14.value = '679';
+        input14.style.color = "black";
+        input14.style.borderColor = "black";
+    }else{
+        input14.value = '679';
+        input14.style.color = "black";
+        input14.style.borderColor = "black";
     }
+
     if (input15.value.length == 0){
         input15.value = '449';
+        input15.style.color = "black";
+        input15.style.borderColor = "black";
+    }else{
+        input15.value = '449';
+        input15.style.color = "black";
+        input15.style.borderColor = "black";
     }
+
     if (input16.value.length == 0){
         input16.value = '451';
+        input16.style.color = "black";
+        input16.style.borderColor = "black";
+    }else{
+        input16.value = '451';
+        input16.style.color = "black";
+        input16.style.borderColor = "black";
     }
 
 }
@@ -123,6 +228,131 @@ function checkActivity1(){
         input1.style.color = "red";
         input1.style.borderColor = "red"; 
     }
+
+    if (input2.value == "585" && checkStop == true){
+        input2.style.color = "green";
+        input2.style.borderColor = "green";
+    }else{
+        input2.style.color = "red";
+        input2.style.borderColor = "red"; 
+    }
+
+    if (input3.value == "394" && checkStop == true){
+        input3.style.color = "green";
+        input3.style.borderColor = "green";
+    }else{
+        input3.style.color = "red";
+        input3.style.borderColor = "red"; 
+    }
+
+    if (input4.value == "396" && checkStop == true){
+        input4.style.color = "green";
+        input4.style.borderColor = "green";
+    }else{
+        input4.style.color = "red";
+        input4.style.borderColor = "red"; 
+    }
+
+    if (input5.value == "199" && checkStop == true){
+        input5.style.color = "green";
+        input5.style.borderColor = "green";
+    }else{
+        input5.style.color = "red";
+        input5.style.borderColor = "red"; 
+    }
+
+    if (input6.value == "201" && checkStop == true){
+        input6.style.color = "green";
+        input6.style.borderColor = "green";
+    }else{
+        input6.style.color = "red";
+        input6.style.borderColor = "red"; 
+    }
+
+    if (input7.value == "377" && checkStop == true){
+        input7.style.color = "green";
+        input7.style.borderColor = "green";
+    }else{
+        input7.style.color = "red";
+        input7.style.borderColor = "red"; 
+    }
+
+    if (input8.value == "379" && checkStop == true){
+        input8.style.color = "green";
+        input8.style.borderColor = "green";
+    }else{
+        input8.style.color = "red";
+        input8.style.borderColor = "red"; 
+    }
+
+    if (input9.value == "894" && checkStop == true){
+        input9.style.color = "green";
+        input9.style.borderColor = "green";
+    }else{
+        input9.style.color = "red";
+        input9.style.borderColor = "red"; 
+    }
+
+    if (input10.value == "896" && checkStop == true){
+        input10.style.color = "green";
+        input10.style.borderColor = "green";
+    }else{
+        input10.style.color = "red";
+        input10.style.borderColor = "red"; 
+    }
+
+    if (input11.value == "776" && checkStop == true){
+        input11.style.color = "green";
+        input11.style.borderColor = "green";
+    }else{
+        input11.style.color = "red";
+        input11.style.borderColor = "red"; 
+    }
+
+    if (input12.value == "778" && checkStop == true){
+        input12.style.color = "green";
+        input12.style.borderColor = "green";
+    }else{
+        input12.style.color = "red";
+        input12.style.borderColor = "red"; 
+    }
+
+    if (input13.value == "677" && checkStop == true){
+        input13.style.color = "green";
+        input13.style.borderColor = "green";
+    }else{
+        input13.style.color = "red";
+        input13.style.borderColor = "red"; 
+    }
+
+    if (input14.value == "679" && checkStop == true){
+        input14.style.color = "green";
+        input14.style.borderColor = "green";
+    }else{
+        input14.style.color = "red";
+        input14.style.borderColor = "red"; 
+    }
+
+    if (input15.value == "449" && checkStop == true){
+        input15.style.color = "green";
+        input15.style.borderColor = "green";
+    }else{
+        input15.style.color = "red";
+        input15.style.borderColor = "red"; 
+    }
+
+    if (input16.value == "451" && checkStop == true){
+        input16.style.color = "green";
+        input16.style.borderColor = "green";
+    }else{
+        input16.style.color = "red";
+        input16.style.borderColor = "red"; 
+    }
+
+    
+
+
+
 
 }
 
@@ -158,18 +388,23 @@ const Delete = document.getElementById('delete');
 
 
 
-const item = Sortable.create(elements,{
-    group: {
-        name: 'posicion',
-        pull: 'clone',
-        put: false, 
-        
-    },
-    chosenClass: "ola",
-    animation: 150,
-    sort: true,    
+function drag(){
+        const item = Sortable.create(elements,{
+        group: {
+            name: 'posicion',
+            pull: 'clone',
+            put: false, 
+            
+        },
+        chosenClass: "ola",
+        animation: 150,
+        sort: true,    
 
-});
+    });
+}
+
+
+
 
 const confirmdiv1 = Sortable.create(position,{
     group: 'posicion',
@@ -262,8 +497,8 @@ const delete1 = Sortable.create(Delete,{
 });
 
 Delete.addEventListener('click',()=>{
-    const state = item.option('chosenClass'); 
-    console.log(state);
+    
+    
 });
 
 btnconfirm.addEventListener('click',()=>{

@@ -90,6 +90,8 @@ input{
 
 }
 
+
+
 .equal{
     width:50px;
     height:50px;
@@ -168,11 +170,30 @@ input{
 
 }
 
+
 .div8{
     font-family: font_bold;
     border-radius: 15px;
     cursor:pointer;
     font-size: 20px;
+}
+
+.confirm{
+    font-family: font_bold;
+    height: 50px;
+    border-radius: 15px;
+    cursor:pointer;
+    font-size: 20px;
+    width: 100px;
+}
+
+.delete{
+    font-family: font_bold;
+    height: 50px;
+    border-radius: 15px;
+    cursor:pointer;
+    font-size: 20px;
+    width: 100px;
 }
 
 
