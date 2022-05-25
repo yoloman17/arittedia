@@ -25,15 +25,19 @@ const stop3=document.getElementById("stop");
 play3.addEventListener('click',(e)=>{
     clearText();
     drag();
+    disableText();
 });
 
 stop3.addEventListener('click',(e) =>{
     returnText();
+    enableInputs();
+    enableText();
     
 });
 
 finishActivity.addEventListener('click',(e) =>{
     checkActivity1();
+    disableInputs();
 });
 
 
@@ -349,13 +353,64 @@ function checkActivity1(){
         input16.style.borderColor = "red"; 
     }
 
-    
+}
 
-
-
+function disableInputs(){
+    input1.disabled = true;
+    input2.disabled = true;
+    input3.disabled = true;
+    input4.disabled = true;
+    input5.disabled = true;
+    input6.disabled = true;
+    input7.disabled = true;
+    input8.disabled = true;
+    input9.disabled = true;
+    input10.disabled = true;
+    input11.disabled = true;
+    input12.disabled = true;
+    input13.disabled = true;
+    input14.disabled = true;
+    input15.disabled = true;
+    input16.disabled = true;
 
 }
 
+function enableInputs(){
+    input1.disabled = false;
+    input2.disabled = false;
+    input3.disabled = false;
+    input4.disabled = false;
+    input5.disabled = false;
+    input6.disabled = false;
+    input7.disabled = false;
+    input8.disabled = false;
+    input9.disabled = false;
+    input10.disabled = false;
+    input11.disabled = false;
+    input12.disabled = false;
+    input13.disabled = false;
+    input14.disabled = false;
+    input15.disabled = false;
+    input16.disabled = false;
+}
+
+function disableText(){
+    document.getElementById("text1").contentEditable = false;
+    document.getElementById("text2").contentEditable = false;
+    document.getElementById("editable").contentEditable=false;
+    for(var i=1;i<=33;i++){
+        document.getElementById("editable"+i).contentEditable=false;
+    }
+}
+
+function enableText(){
+    document.getElementById("text1").contentEditable = true;
+    document.getElementById("text2").contentEditable = true;
+    document.getElementById("editable").contentEditable= true;
+    for(var i=1;i<=33;i++){
+        document.getElementById("editable"+i).contentEditable= true;
+    }
+}
 
 
 
@@ -384,7 +439,7 @@ const position11 = document.getElementById("position11");
 const position12 = document.getElementById("position12");
 const position13 = document.getElementById("position13");
 const btnconfirm = document.getElementById('confirm');
-const Delete = document.getElementById('delete');
+const Delete = document.getElementById('delete1');
 
 
 

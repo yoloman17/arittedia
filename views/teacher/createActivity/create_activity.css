@@ -52,7 +52,6 @@ section h1{
     margin-right: auto;
     margin-bottom:30px;
     margin-top:20px;
-    background-color: lightgray;
     height: 100px;
     width: 99.8%;
     border-style:solid;
@@ -71,7 +70,6 @@ section h1{
     margin-left: auto;
     margin-right: auto;
     margin-top:30px;
-    background-color: lightgray;
     height: 500px;
     width: 99.8%;
     border-style:solid;
@@ -154,4 +152,48 @@ section h1{
 fieldset figure{
     text-align: center;
     
+}
+
+.div3{
+    display:grid;
+    grid-template-columns: 25% 25%;
+    grid-column-gap: 3%;
+    height: 80%;
+    width: 100%;
+}
+
+.div4{
+    height: 100%;
+    width: 90%;
+    border-style:solid;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 25px;
+    margin-left: 10%;
+    margin-top:5%;
+}
+
+.div5{
+    height: 100%;
+    width: 90%;
+    border-style:solid;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 25px;
+    margin-top:5%;
+}
+
+.h2_3{
+    text-align:center;
+    font-family: font_bold;
+}
+
+.puzzle{
+    width:150px;
+    height:150px;
+    color:black;
+    cursor:pointer;
+    margin-top: 20%;
+    margin-left: 25%;
+    text-align: center;
 }

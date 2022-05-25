@@ -65,8 +65,13 @@ body{
     margin-top: auto;
     margin-right: auto;
     margin-left: auto;
-    cursor:pointer;
+    color:white;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .3s ease all;
+    background-color: rgb(82, 103, 226);
 }
+
 
 .button2{
     font-family: font_bold;
@@ -81,8 +86,13 @@ body{
     margin-top: auto;
     margin-right: auto;
     margin-left: auto;
-    cursor:pointer;
+    color:white;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .3s ease all;
+    background-color: rgb(82, 103, 226);
 }
+
 
 .button3{
     font-family: font_bold;
@@ -97,10 +107,15 @@ body{
     margin-top: auto;
     margin-right: auto;
     margin-left: auto;
-    cursor:pointer;
     display:none;
+    color:white;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .3s ease all;
+    background-color: rgba(138, 95, 218, 0.8);
 
 }
+
 
 .play{
     width:50px;

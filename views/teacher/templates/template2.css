@@ -8,18 +8,28 @@
     src: url(/fonts/font_regular.ttf);
 }
 
-div{
+.text1{
     font-family: font_regular;
     font-size: 30px;
+    margin:20px;
+}
+
+.text2{
+    font-family: font_regular;
+    font-size: 30px;
+    margin:20px;
+}
+
+.icons{
     margin:20px;
 }
 
 .div4{
     border-style: dotted;
     border-radius: 5px;
-    margin:20px;
+    margin:25px;
     font-family: font_bold;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 input{
@@ -53,7 +63,7 @@ input{
 .editable{
     text-align: center;
     height: 20px;
-    padding: 1px;;
+    margin: 10px;
 }
 
 .icons{
@@ -111,6 +121,7 @@ input{
     border-radius: 5px;
     font-family: font_bold;
     font-size: 20px;
+    margin: 20px;
 }
 
 .div6{
@@ -121,6 +132,7 @@ input{
     border-radius: 5px;
     font-family: font_bold;
     font-size: 20px;
+    margin: 20px;
 }
 
 .div601{
@@ -158,13 +170,13 @@ input{
 
 .complete3{
     display: grid;
-    grid-template-columns: 55% 55% 55%;
+    grid-template-columns: 49% 49% 49%;
     grid-column-gap: 14px;
     grid-row-gap: 15px;
 }
 .complete4{
     display: grid;
-    grid-template-columns: 55% 55% 55%;
+    grid-template-columns: 49% 49% 49%;
     grid-column-gap: 14px;
     grid-row-gap: 15px;
 
@@ -187,7 +199,7 @@ input{
     width: 100px;
 }
 
-.delete{
+.delete1{
     font-family: font_bold;
     height: 50px;
     border-radius: 15px;
