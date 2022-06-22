@@ -4,78 +4,92 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="assign_activity.css" rel="stylesheet">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>Asigna Una Actividad</title>
 </head>
 <body>
-    <header>
-        <figure>
-            <a href ="/views/teacher/homePage/homePage.html"><img src=https://firebasestorage.googleapis.com/v0/b/arittedia.appspot.com/o/shield.webp?alt=media&token=ea0067cf-c35f-4884-8d4f-cca0b93fec2b width="200" height="250"> </a>
-        </figure>
-        <h1>ARITTEDIA</h1>
-    </header>
-    <section>
-        <div class="mainDiv">
-            <h1>¡A Trabajar!</h1>
-            <figure>
-                <img src="https://firebasestorage.googleapis.com/v0/b/arittedia.appspot.com/o/A%20trabajar.png?alt=media&token=6faa33c2-beb2-47a0-9e5c-a017fcc45173" height="350" width="350"></figure>
-            </figure>
-            <form>
-                <label class="labelTittle1" for="nameActivity">
-                    Asigna un nombre a la actividad
-                </label>
-                    <br><input class="input1" type="text" id="nameActivity" name="nameActivity" required
-                    minlength="5" maxlength="100" size="45" placeholder="Ingre un nombre para la actividad"><br><br>
-                <label class="labelTittle2" for="new_password">
-                    Asigna una fecha
-                </label>
-                <br><br>
-                    <div class = "div2">
-                        <form name="formulario" method="post" action="/send.php">
-                            <input class = "input2" type="date" name="mes" value="2022-04" 
-                            min="2022-04" max="2022-12" step="1" />
-                        </form>
-                        <label class="labelSubTittle1" for="start">
-                            Inicio
+    <div class="container">
+        <div class="row"></div>
+            <div class="col">
+                <figure>
+                    <a href ="/views/teacher/homePage/homePage.html"><img class="mt-4"  id="img1" src=https://firebasestorage.googleapis.com/v0/b/arittedia.appspot.com/o/shield.webp?alt=media&token=ea0067cf-c35f-4884-8d4f-cca0b93fec2b width="200" height="250"> </a>
+                </figure>
+            </div>
+            <div class="col">
+                <h1>ARITTEDIA</h1>
+            </div>
+                
+        <div class="row">
+            <div class="col">
+                <div class="mainDiv">
+                    <h2>¡A Trabajar!</h2>
+                    <figure>
+                        <img class="img-fluid mx-auto d-block" id="img2" src="https://firebasestorage.googleapis.com/v0/b/arittedia.appspot.com/o/A%20trabajar.png?alt=media&token=6faa33c2-beb2-47a0-9e5c-a017fcc45173" height="350" width="350"></figure>
+                    </figure>
+                    <form>
+                        <label class="labelTittle1" for="nameActivity">
+                            Asigna un nombre a la actividad
                         </label>
-                    </div>
-                    <div class = "div3">
-                        <form name="formulario" method="post" action="/send.php">
-                            <input class = "input3" type="date" name="mes" value="2022-04" 
-                            min="2022-04" max="2022-12" step="1" />
-                        </form>
-                        <label class="labelSubTittle2" for="end">
-                            Fin
+                            <br><input class="input1" type="text" id="nameActivity" name="nameActivity" required
+                            minlength="5" maxlength="100" size="45" placeholder="Ingrese un nombre para la actividad"><br><br>
+                        <label class="labelTittle2" for="new_password">
+                            Asigna una fecha
                         </label>
-                    </div>        
-                <br><br>
-                <label class="labelTittle3" for="time">
-                    Asigna una hora 
-                </label>
-                <br></br>
-                <div class = "div4">
-                    <br><form name="formulario" method="post" action="/send.php">
-                        <input class = "input4" type="time" name="hora"
-                        value="" min="00" max="23:59" step="1" /> 
+                        <br><br>
+                            <div class = "div2">
+                                <form name="formulario" method="post" action="/send.php">
+                                    <input class = "input2" type="date" name="mes" value="2022-04" 
+                                    min="2022-04" max="2022-12" step="1" />
+                                </form>
+                                <label class="labelSubTittle1" for="start">
+                                    Inicio
+                                </label>
+                            </div>
+                            <div class = "div3">
+                                <form name="formulario" method="post" action="/send.php">
+                                    <input class = "input3" type="date" name="mes" value="2022-04" 
+                                    min="2022-04" max="2022-12" step="1" />
+                                </form>
+                                <label class="labelSubTittle2" for="end">
+                                    Fin
+                                </label>
+                            </div>        
+                        <br><br>
+                        <label class="labelTittle3" for="time">
+                            Asigna una hora 
+                        </label>
+                        <br></br>
+                        <div class = "div4">
+                            <br><form name="formulario" method="post" action="/send.php">
+                                <input class = "input4" type="time" name="hora"
+                                value="" min="00" max="23:59" step="1" /> 
+                            </form>
+                            <label class="labelSubTittle1" for="start_time">
+                                Inicio
+                            </label><br>
+                        </div>
+                        <div class = "div5">
+                            <form name="formulario" method="post" action="/send.php">
+                                <input class = "input5" type="time" name="hora"
+                                   value="" min="00" max="23:59" step="1" />
+                            </form>
+                            <label class="labelSubTittle2" for="finish_time">
+                                Fin
+                            </label><br>
+                        </div>       
                     </form>
-                    <label class="labelSubTittle1" for="start_time">
-                        Inicio
-                    </label><br>
+                    <form action="/views/user/loginPage/loginPage.html">
+                        <button class="button1"><span>Asignar Actividad</span></button>
+                    </form>
                 </div>
-                <div class = "div5">
-                    <form name="formulario" method="post" action="/send.php">
-                        <input class = "input5" type="time" name="hora"
-                           value="" min="00" max="23:59" step="1" />
-                    </form>
-                    <label class="labelSubTittle2" for="finish_time">
-                        Fin
-                    </label><br>
-                </div>       
-            </form>
-            <form action="/views/user/loginPage/loginPage.html">
-                <button class="button1"><span>Asignar Actividad</span></button>
-            </form>
+            </div>
         </div>
-    </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script type= "module" src="/controller/teacher/assignActivity.js"></script>
 </body>
 </html>

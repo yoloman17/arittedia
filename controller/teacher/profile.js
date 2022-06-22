@@ -32,7 +32,20 @@ onAuthStateChanged(auth, (user) => {
     });
 
   } else {
-      console.log("No hay ningún usuario logueado");
+    Swal.fire({
+      title: 'No hay usuarios logueados',
+      icon: 'error',
+      confirmButtonColor: '#d33',
+      confirmButtonText: 'Ok',
+      allowOutsideClick: false,
+      allowEscapeKey: false,
+      allowEnterKey: false,
+      stopKeydownPropagation: false
+    }).then((result) => {
+      if (result.isConfirmed) {
+        window.location.href="/views/user/loginPage/loginPage.html";
+      }
+    });
 
   }
 });

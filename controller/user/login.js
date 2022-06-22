@@ -102,7 +102,7 @@ login.addEventListener('click',(e)=>{
         const errorMessage = error.message;
         Swal.fire({
             title:'ARITTEDIA',
-            text: 'El correo o la contraseña son incorrectos',
+            text: 'El correo, el rol o la contraseña son incorrectos',
             icon: 'error'
         });
         form.reset();

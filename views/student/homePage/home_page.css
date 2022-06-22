@@ -14,272 +14,349 @@ body{
     src: url(/fonts/font_regular.ttf);
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+.shield{
+    width: 18vw;
+    height: 20vw ;
+}
+.img1{
+    width: 20vw;
+    height: 20vw ;
+}
+.img2{
+    width: 20vw;
+    height: 20vw ;
+}
+
+header figure{
+
+    position: absolute;
+    top: 1.333vw;
+    left: 2vw;
+    margin-right: auto;
+    margin-left: auto;
 
 }
 
+header{
+    padding-bottom: 6.667vw;
+}
+.row{
+    margin-left: 50vw;
+}
+header h1{
+    margin-left: 1vw;
+   text-align: center;
+   padding-top: 5vw;
+   font-size: 10vw;
+   font-family: font_bold;
+   
+}
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-    .shield{
-        width: 20vw;
-        height: 25vw ;
-    }
-    .img1{
-        width: 20vw;
-        height: 20vw ;
-    }
-    .img2{
-        width: 20vw;
-        height: 20vw ;
-    }
+section h1{
+    margin-top: 1vw;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+    font-size: 5vw;
+    font-family: font_bold;
 
-    header figure{
+}
+.div1{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:3vw;
+    margin-top:1vw;
+    height: 8.8vw;
+    width: 98.5vw;
+    border-style:solid;
+    border-width:0.267vw;
+    border-color: black;
+    border-radius: 3.333vw;
 
-        position: absolute;
-        top: 1.333vw;
-        left: 2vw;
-        margin-right: auto;
-        margin-left: auto;
+    background-color: #EEEDED;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='26' viewBox='0 0 90 90'%3E%3Ccircle fill='%235267E2' cx='45' cy='45' r='5'/%3E%3Cg fill='%238A5FDA' fill-opacity='1'%3E%3Ccircle cx='0' cy='90' r='5'/%3E%3Ccircle cx='90' cy='90' r='5'/%3E%3Ccircle cx='90' cy='0' r='5'/%3E%3Ccircle cx='0' cy='0' r='5'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+
+.div2{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:4vw;
+    background-color: lightgray;
+    height: 30vw;
+    width: 98.5vw;
+    border-style:solid;
+    border-width: 0.267vw;
+    border-color: black;
+    border-radius: 3.333vw;
+
+    background-color: #EEEDED;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='26' viewBox='0 0 90 90'%3E%3Ccircle fill='%235267E2' cx='45' cy='45' r='5'/%3E%3Cg fill='%238A5FDA' fill-opacity='1'%3E%3Ccircle cx='0' cy='90' r='5'/%3E%3Ccircle cx='90' cy='90' r='5'/%3E%3Ccircle cx='90' cy='0' r='5'/%3E%3Ccircle cx='0' cy='0' r='5'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+
+
+.nav_bar{
+    display:inline-block;
+    background-color: aliceblue;
+    text-align: center;
+    color:black;
+    margin-top: -10vw;
+    padding-left: 24vw;
+    padding-right: 21vw;
+    padding-bottom: 1vw;
+    padding-top: 0.6vw;
+    font-family:font_regular;
+    bottom: 100vw;
+    border-style:solid;
+    text-decoration:none;
+    border-radius: 1.333vw;
+
+}
+
+.nav_bar:hover{
+    background: rgba(138, 95, 218, 0.8);
+    color:white;
+    border-color: black;
+}
+
+h2{
+    font-size: 2.667vw;
+    font-family: font_bold;
+    margin-left: 2vw;
+    margin-top: 0.4vw;
     
-    }
+ }
+
+ .fieldset1{
+    width: 10vw;
+    height: 20vw;
+    border-style:solid;
+    border-width:0.66;
+    border-color:black;
+    border-radius: 2vw;
+
+ }
+
+ .field{
+    margin-left: 80vw;
+    margin-top: -1vw;
+ }
+
+ legend {
+    font-size: 1.3vw;
+    font-family: font_bold;
+    left: 85vw;
+    margin-top: 0.5vw;
+     
+ }
+
+.input1{
+    left: 90vw;
+    height: 1.5vw;
+    width: 10vw;
+    font-family: font_regular;
+    font-size: 1vw;
+    border-style: solid;
+    border-width:0.25vw;
+    border-color: black;
+    border-radius: 1vw;
+}
+
+
+
+table{
+    font-family: font_bold;
+    width: 80vw;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 4vw;
     
-    header{
-        padding-bottom: 6.667vw;
-    }
-    header h1{
-        margin-left: auto;
-        margin-right: auto;
-       text-align: center;
-       padding-top: 7.333vw;
-       font-size: 7vw;
-       font-family: font_bold;
-       
-    }
+
+}
+
+table tr{
+    text-align: center;
+}
+
+.td2{
+    padding-left:13vw;
     
-    section h1{
-        margin-top: 1vw;
-        margin-left:auto;
-        margin-right:auto;
-        text-align:center;
-        font-size: 5vw;
-        font-family: font_bold;
-    
-    }
-    .div1{
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom:4vw;
-        margin-top:2.667vw;
-        height: 8.8vw;
-        width: 98.5vw;
-        border-style:solid;
-        border-width:0.267vw;
-        border-color: black;
-        border-radius: 3.333vw;
-    
-        background-color: #EEEDED;
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='26' viewBox='0 0 90 90'%3E%3Ccircle fill='%235267E2' cx='45' cy='45' r='5'/%3E%3Cg fill='%238A5FDA' fill-opacity='1'%3E%3Ccircle cx='0' cy='90' r='5'/%3E%3Ccircle cx='90' cy='90' r='5'/%3E%3Ccircle cx='90' cy='0' r='5'/%3E%3Ccircle cx='0' cy='0' r='5'/%3E%3C/g%3E%3C/svg%3E");
-    }
-    
-    
-    .div2{
-        margin-left: auto;
-        margin-right: auto;
-        margin-top:4vw;
-        background-color: lightgray;
-        height: 30vw;
-        width: 98.5vw;
-        border-style:solid;
-        border-width: 0.267vw;
-        border-color: black;
-        border-radius: 3.333vw;
-    
-        background-color: #EEEDED;
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='26' viewBox='0 0 90 90'%3E%3Ccircle fill='%235267E2' cx='45' cy='45' r='5'/%3E%3Cg fill='%238A5FDA' fill-opacity='1'%3E%3Ccircle cx='0' cy='90' r='5'/%3E%3Ccircle cx='90' cy='90' r='5'/%3E%3Ccircle cx='90' cy='0' r='5'/%3E%3Ccircle cx='0' cy='0' r='5'/%3E%3C/g%3E%3C/svg%3E");
-    }
-    
-    
-    
+}
+
+.button1{
+    font-family: font_bold;
+    padding: 1vw;
+    border-radius: 2vw;
+    font-weight: 1vw;
+    font-size: 1.5vw;
+    cursor: pointer;
+    transition: .3s ease all;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .3s ease all;
+    overflow: hidden;
+    border-color:black;
+    color:white;
+    background-color: rgb(82, 103, 226);
+}
+
+.button1 span{
+    position:relative;
+    z-index:2;
+    transition: .3s ease all;
+}
+
+.button1::after{
+    content:"";
+    width:100%;
+    height:300px;
+    background: #286cff;
+    position: absolute;
+    z-index:1;
+    top:-300px;
+    left:0;
+    transition: .4s ease-in-out all;
+    border-radius: 0px 0px 300px 300px;
+}
+
+.button1:hover::after{
+    top:0;
+}
+
+.button2{
+    font-family: font_bold;
+    padding: 1vw;
+    border-radius: 2vw;
+    font-weight: 1vw;
+    font-size: 1.5vw;
+    cursor: pointer;
+    transition: .3s ease all;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .3s ease all;
+    overflow: hidden;
+    border-color:black;
+    color:white;
+    background-color: rgb(82, 103, 226);
+}
+
+.button2 span{
+    position:relative;
+    z-index:2;
+    transition: .3s ease all;
+}
+
+.button22::after{
+    content:"";
+    width:100%;
+    height:300px;
+    background: #286cff;
+    position: absolute;
+    z-index:1;
+    top:-300px;
+    left:0;
+    transition: .4s ease-in-out all;
+    border-radius: 0px 0px 300px 300px;
+}
+
+.button2:hover::after{
+    top:0;
+}
+
+
+h3{
+    font-size: 1.5em;
+    font-family: font_bold;
+    margin-left: 2vw;
+    margin-top: 0.4vw;
+}
+
+.a1{
+    color:black;
+}
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
     .nav_bar{
         display:inline-block;
         background-color: aliceblue;
         text-align: center;
         color:black;
-        padding-left: 46vw;
-        padding-right: 46vw;
-        padding-bottom: 0.667vw;
-        padding-top: 0.667vw;
+        margin-top: -10vw;
+        padding-left: 20vw;
+        padding-right: 20vw;
+        padding-bottom: 1vw;
+        padding-top: 0.6vw;
         font-family:font_regular;
         bottom: 100vw;
         border-style:solid;
         text-decoration:none;
         border-radius: 1.333vw;
-    
     }
-    
-    .nav_bar:hover{
-        background: rgba(138, 95, 218, 0.8);
-        color:white;
-        border-color: black;
+    .fieldset1{
+        margin-left: 1vw;
+        width:1vw;
+        height:1vw;
+        border-style:solid;
+        border-width:0.66;
+        border-color:black;
+        border-radius: 2vw;
     }
-    
-    h2{
-        font-size: 2.667vw;
-        font-family: font_bold;
-        margin-left: 2vw;
-        margin-top: 0.4vw;
-        
-     }
-    
-     fieldset{
-         width:3vw;
-         height:6vw;
-         border-style:solid;
-         border-width:0.667vw;
-         border-color:black;
-         margin-left:auto;
-         margin-right:100vw;
-         margin-top: vw;
-         border-radius: 2vw;
-    
-     }
-    
-     legend {
-        font-size: 1.3em;
-        font-family: font_bold;
-        margin-left: 85vw;
-        margin-top: 0.5vw;
-         
-     }
-    
-    input{
-        margin-left: 10vw;
-        height: 2.667vw;
-        width: 25vw;
-        font-family: font_regular;
-        font-size: 2.667vw;
-        border-style: solid;
-        border-width:0.3vw;
-        border-color: black;
-        border-radius: 1vw;
+    .div1{
+        width: 103.5vw;
     }
-    
-    
-    
-    table{
-        font-family: font_bold;
-        width: 80vw;
-        margin-left:auto;
-        margin-right:auto;
-        margin-top: 4vw;
-        
-    
+
+    .div2{
+        width: 103.5vw;
     }
-    
-    table tr{
+
+    header h1{
+        margin-left: 10vw;  
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .nav_bar{
+        display:inline-block;
+        background-color: aliceblue;
         text-align: center;
-    }
-    
-    .td2{
-        padding-left:13vw;
-        
-    }
-    
-    .button1{
-        font-family: font_bold;
-        padding: 1vw;
-        border-radius: 2vw;
-        font-weight: 1vw;
-        font-size: 1.5vw;
-        cursor: pointer;
-        transition: .3s ease all;
-        overflow: hidden;
-        cursor: pointer;
-        transition: .3s ease all;
-        overflow: hidden;
-        border-color:black;
-        color:white;
-        background-color: rgb(82, 103, 226);
-    }
-    
-    .button1 span{
-        position:relative;
-        z-index:2;
-        transition: .3s ease all;
-    }
-    
-    .button1::after{
-        content:"";
-        width:100%;
-        height:300px;
-        background: #286cff;
-        position: absolute;
-        z-index:1;
-        top:-300px;
-        left:0;
-        transition: .4s ease-in-out all;
-        border-radius: 0px 0px 300px 300px;
-    }
-    
-    .button1:hover::after{
-        top:0;
-    }
-    
-    .button2{
-        font-family: font_bold;
-        padding: 1vw;
-        border-radius: 2vw;
-        font-weight: 1vw;
-        font-size: 1.5vw;
-        cursor: pointer;
-        transition: .3s ease all;
-        overflow: hidden;
-        cursor: pointer;
-        transition: .3s ease all;
-        overflow: hidden;
-        border-color:black;
-        color:white;
-        background-color: rgb(82, 103, 226);
-    }
-    
-    .button2 span{
-        position:relative;
-        z-index:2;
-        transition: .3s ease all;
-    }
-    
-    .button22::after{
-        content:"";
-        width:100%;
-        height:300px;
-        background: #286cff;
-        position: absolute;
-        z-index:1;
-        top:-300px;
-        left:0;
-        transition: .4s ease-in-out all;
-        border-radius: 0px 0px 300px 300px;
-    }
-    
-    .button2:hover::after{
-        top:0;
-    }
-    
-    
-    h3{
-        font-size: 1.5em;
-        font-family: font_bold;
-        margin-left: 2vw;
-        margin-top: 0.4vw;
-    }
-    
-    .a1{
         color:black;
+        margin-top: -10vw;
+        padding-left: 21vw;
+        padding-right: 20vw;
+        padding-bottom: 1vw;
+        padding-top: 0.6vw;
+        font-family:font_regular;
+        bottom: 100vw;
+        border-style:solid;
+        text-decoration:none;
+        border-radius: 1.333vw;
     }
+        .fieldset1{
+            margin-left: 1vw;
+            width:1vw;
+            height:1vw;
+            border-style:solid;
+            border-width:0.66;
+            border-color:black;
+            border-radius: 2vw;
+        }
+        .div1{
+            width: 103.5vw;
+        }
 
-
+        .div2{
+            width: 103.5vw;
+        }
+        header h1{
+            margin-left: 10vw;  
+        }
 }
 
 
@@ -292,95 +369,16 @@ body{
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    .shield{
-        width: 20vw;
-        height: 20vw ;
-    }
-    .img1{
-        width: 20vw;
-        height: 20vw ;
-    }
-    .img2{
-        width: 20vw;
-        height: 20vw ;
-    }
-
-    header figure{
-
-        position: absolute;
-        top: 1.333vw;
-        left: 2vw;
-        margin-right: auto;
-        margin-left: auto;
-    
-    }
-    
-    header{
-        padding-bottom: 6.667vw;
-    }
-    header h1{
-        margin-left: auto;
-        margin-right: auto;
-       text-align: center;
-       padding-top: 7.333vw;
-       font-size: 7vw;
-       font-family: font_bold;
-       
-    }
-    
-    section h1{
-        margin-top: 1vw;
-        margin-left:auto;
-        margin-right:auto;
-        text-align:center;
-        font-size: 5vw;
-        font-family: font_bold;
-    
-    }
-    .div1{
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom:4vw;
-        margin-top:2.667vw;
-        height: 8.8vw;
-        width: 98.5vw;
-        border-style:solid;
-        border-width:0.267vw;
-        border-color: black;
-        border-radius: 3.333vw;
-    
-        background-color: #EEEDED;
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='26' viewBox='0 0 90 90'%3E%3Ccircle fill='%235267E2' cx='45' cy='45' r='5'/%3E%3Cg fill='%238A5FDA' fill-opacity='1'%3E%3Ccircle cx='0' cy='90' r='5'/%3E%3Ccircle cx='90' cy='90' r='5'/%3E%3Ccircle cx='90' cy='0' r='5'/%3E%3Ccircle cx='0' cy='0' r='5'/%3E%3C/g%3E%3C/svg%3E");
-    }
-    
-    
-    .div2{
-        margin-left: auto;
-        margin-right: auto;
-        margin-top:4vw;
-        background-color: lightgray;
-        height: 30vw;
-        width: 98.5vw;
-        border-style:solid;
-        border-width: 0.267vw;
-        border-color: black;
-        border-radius: 3.333vw;
-    
-        background-color: #EEEDED;
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='26' viewBox='0 0 90 90'%3E%3Ccircle fill='%235267E2' cx='45' cy='45' r='5'/%3E%3Cg fill='%238A5FDA' fill-opacity='1'%3E%3Ccircle cx='0' cy='90' r='5'/%3E%3Ccircle cx='90' cy='90' r='5'/%3E%3Ccircle cx='90' cy='0' r='5'/%3E%3Ccircle cx='0' cy='0' r='5'/%3E%3C/g%3E%3C/svg%3E");
-    }
-    
-    
-    
     .nav_bar{
         display:inline-block;
         background-color: aliceblue;
         text-align: center;
         color:black;
-        padding-left: 25vw;
-        padding-right: 20vw;
-        padding-bottom: 0.667vw;
-        padding-top: 0.667vw;
+        margin-top: -10vw;
+        padding-left: 21vw;
+        padding-right: 22vw;
+        padding-bottom: 1vw;
+        padding-top: 0.6vw;
         font-family:font_regular;
         bottom: 100vw;
         border-style:solid;
@@ -388,532 +386,52 @@ body{
         border-radius: 1.333vw;
     
     }
-    
-    .nav_bar:hover{
-        background: rgba(138, 95, 218, 0.8);
-        color:white;
-        border-color: black;
-    }
-    
-    h2{
-        font-size: 2.667vw;
-        font-family: font_bold;
-        margin-left: 2vw;
-        margin-top: 0.4vw;
-        
-     }
-    
-     fieldset{
-         width:3vw;
-         height:6vw;
-         border-style:solid;
-         border-width:0.667vw;
-         border-color:black;
-         margin-left:auto;
-         margin-right:6vw;
-         margin-top: -0.043vw;
-         border-radius: 2vw;
-    
-     }
-    
-     legend {
-        font-size: 1.3em;
-        font-family: font_bold;
-        margin-left: 85vw;
-        margin-top: 0.5vw;
-         
-     }
-    
-    input{
-        margin-left: 10vw;
-        height: 2.667vw;
-        width: 25vw;
-        font-family: font_regular;
-        font-size: 2.667vw;
-        border-style: solid;
-        border-width:0.3vw;
-        border-color: black;
-        border-radius: 1vw;
-    }
-    
-    
-    
-    table{
-        font-family: font_bold;
-        width: 80vw;
-        margin-left:auto;
-        margin-right:auto;
-        margin-top: 4vw;
-        
-    
-    }
-    
-    table tr{
-        text-align: center;
-    }
-    
-    .td2{
-        padding-left:13vw;
-        
-    }
-    
-    .button1{
-        font-family: font_bold;
-        padding: 1vw;
-        border-radius: 2vw;
-        font-weight: 1vw;
-        font-size: 1.5vw;
-        cursor: pointer;
-        transition: .3s ease all;
-        overflow: hidden;
-        cursor: pointer;
-        transition: .3s ease all;
-        overflow: hidden;
+    .fieldset1{
+        margin-left: 1vw;
+        width:1vw;
+        height:1vw;
+        border-style:solid;
+        border-width:0.66;
         border-color:black;
-        color:white;
-        background-color: rgb(82, 103, 226);
-    }
-    
-    .button1 span{
-        position:relative;
-        z-index:2;
-        transition: .3s ease all;
-    }
-    
-    .button1::after{
-        content:"";
-        width:100%;
-        height:300px;
-        background: #286cff;
-        position: absolute;
-        z-index:1;
-        top:-300px;
-        left:0;
-        transition: .4s ease-in-out all;
-        border-radius: 0px 0px 300px 300px;
-    }
-    
-    .button1:hover::after{
-        top:0;
-    }
-    
-    .button2{
-        font-family: font_bold;
-        padding: 1vw;
         border-radius: 2vw;
-        font-weight: 1vw;
-        font-size: 1.5vw;
-        cursor: pointer;
-        transition: .3s ease all;
-        overflow: hidden;
-        cursor: pointer;
-        transition: .3s ease all;
-        overflow: hidden;
-        border-color:black;
-        color:white;
-        background-color: rgb(82, 103, 226);
-    }
-    
-    .button2 span{
-        position:relative;
-        z-index:2;
-        transition: .3s ease all;
-    }
-    
-    .button22::after{
-        content:"";
-        width:100%;
-        height:300px;
-        background: #286cff;
-        position: absolute;
-        z-index:1;
-        top:-300px;
-        left:0;
-        transition: .4s ease-in-out all;
-        border-radius: 0px 0px 300px 300px;
-    }
-    
-    .button2:hover::after{
-        top:0;
-    }
-    
-    
-    h3{
-        font-size: 1.5em;
-        font-family: font_bold;
-        margin-left: 2vw;
-        margin-top: 0.4vw;
-    }
-    
-    .a1{
-        color:black;
     }
 
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    .shield{
-        width: 20vw;
-        height: 20vw ;
-    }
-    .img1{
-        width: 20vw;
-        height: 20vw ;
-    }
-    .img2{
-        width: 20vw;
-        height: 20vw ;
-    }
-    header figure{
-
-        position: absolute;
-        top: 1.333vw;
-        left: 2vw;
-        margin-right: auto;
-        margin-left: auto;
-    
-    }
-    
-    header{
-        padding-bottom: 6.667vw;
-    }
-    header h1{
-        margin-left: auto;
-        margin-right: auto;
-       text-align: center;
-       padding-top: 7.333vw;
-       font-size: 7vw;
-       font-family: font_bold;
-       
-    }
-    
-    section h1{
-        margin-top: 1vw;
-        margin-left:auto;
-        margin-right:auto;
-        text-align:center;
-        font-size: 5vw;
-        font-family: font_bold;
-    
-    }
-    .div1{
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom:4vw;
-        margin-top:2.667vw;
-        height: 8.8vw;
-        width: 98.5vw;
-        border-style:solid;
-        border-width:0.267vw;
-        border-color: black;
-        border-radius: 3.333vw;
-    
-        background-color: #EEEDED;
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='26' viewBox='0 0 90 90'%3E%3Ccircle fill='%235267E2' cx='45' cy='45' r='5'/%3E%3Cg fill='%238A5FDA' fill-opacity='1'%3E%3Ccircle cx='0' cy='90' r='5'/%3E%3Ccircle cx='90' cy='90' r='5'/%3E%3Ccircle cx='90' cy='0' r='5'/%3E%3Ccircle cx='0' cy='0' r='5'/%3E%3C/g%3E%3C/svg%3E");
-    }
-    
-    
-    .div2{
-        margin-left: auto;
-        margin-right: auto;
-        margin-top:4vw;
-        background-color: lightgray;
-        height: 30vw;
-        width: 98.5vw;
-        border-style:solid;
-        border-width: 0.267vw;
-        border-color: black;
-        border-radius: 3.333vw;
-    
-        background-color: #EEEDED;
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='26' viewBox='0 0 90 90'%3E%3Ccircle fill='%235267E2' cx='45' cy='45' r='5'/%3E%3Cg fill='%238A5FDA' fill-opacity='1'%3E%3Ccircle cx='0' cy='90' r='5'/%3E%3Ccircle cx='90' cy='90' r='5'/%3E%3Ccircle cx='90' cy='0' r='5'/%3E%3Ccircle cx='0' cy='0' r='5'/%3E%3C/g%3E%3C/svg%3E");
-    }
-    
-    
-    
     .nav_bar{
         display:inline-block;
         background-color: aliceblue;
         text-align: center;
         color:black;
-        padding-left: 47.5vw;
-        padding-right: 47.5vw;
-        padding-bottom: 0.667vw;
-        padding-top: 0.667vw;
+        margin-top: -10vw;
+        padding-left: 23vw;
+        padding-right: 21.5vw;
+        padding-bottom: 1vw;
+        padding-top: 0.6vw;
         font-family:font_regular;
-        bottom: 1vw;
+        bottom: 100vw;
         border-style:solid;
         text-decoration:none;
         border-radius: 1.333vw;
     
     }
-    
-    .nav_bar:hover{
-        background: rgba(138, 95, 218, 0.8);
-        color:white;
-        border-color: black;
-    }
-    
-    h2{
-        font-size: 2.667vw;
-        font-family: font_bold;
-        margin-left: 2vw;
-        margin-top: 0.4vw;
-        
-     }
-    
-     fieldset{
-         width:3vw;
-         height:6vw;
-         border-style:solid;
-         border-width:0.667vw;
-         border-color:black;
-         margin-left:auto;
-         margin-right:6vw;
-         margin-top: -0.043vw;
-         border-radius: 2vw;
-    
-     }
-    
-     legend {
-        font-size: 1.3em;
-        font-family: font_bold;
-        margin-left: 85vw;
-        margin-top: 0.5vw;
-         
-     }
-    
-    input{
-        margin-left: 10vw;
-        height: 2.667vw;
-        width: 25vw;
-        font-family: font_regular;
-        font-size: 2.667vw;
-        border-style: solid;
-        border-width:0.3vw;
-        border-color: black;
-        border-radius: 1vw;
-    }
-    
-    
-    
-    table{
-        font-family: font_bold;
-        width: 80vw;
-        margin-left:auto;
-        margin-right:auto;
-        margin-top: 4vw;
-        
-    
-    }
-    
-    table tr{
-        text-align: center;
-    }
-    
-    .td2{
-        padding-left:13vw;
-        
-    }
-    
-    .button1{
-        font-family: font_bold;
-        padding: 1vw;
-        border-radius: 2vw;
-        font-weight: 1vw;
-        font-size: 1.5vw;
-        cursor: pointer;
-        transition: .3s ease all;
-        overflow: hidden;
-        cursor: pointer;
-        transition: .3s ease all;
-        overflow: hidden;
-        border-color:black;
-        color:white;
-        background-color: rgb(82, 103, 226);
-    }
-    
-    .button1 span{
-        position:relative;
-        z-index:2;
-        transition: .3s ease all;
-    }
-    
-    .button1::after{
-        content:"";
-        width:100%;
-        height:300px;
-        background: #286cff;
-        position: absolute;
-        z-index:1;
-        top:-300px;
-        left:0;
-        transition: .4s ease-in-out all;
-        border-radius: 0px 0px 300px 300px;
-    }
-    
-    .button1:hover::after{
-        top:0;
-    }
-    
-    .button2{
-        font-family: font_bold;
-        padding: 1vw;
-        border-radius: 2vw;
-        font-weight: 1vw;
-        font-size: 1.5vw;
-        cursor: pointer;
-        transition: .3s ease all;
-        overflow: hidden;
-        cursor: pointer;
-        transition: .3s ease all;
-        overflow: hidden;
-        border-color:black;
-        color:white;
-        background-color: rgb(82, 103, 226);
-    }
-    
-    .button2 span{
-        position:relative;
-        z-index:2;
-        transition: .3s ease all;
-    }
-    
-    .button22::after{
-        content:"";
-        width:100%;
-        height:300px;
-        background: #286cff;
-        position: absolute;
-        z-index:1;
-        top:-300px;
-        left:0;
-        transition: .4s ease-in-out all;
-        border-radius: 0px 0px 300px 300px;
-    }
-    
-    .button2:hover::after{
-        top:0;
-    }
-    
-    
-    h3{
-        font-size: 1.5em;
-        font-family: font_bold;
-        margin-left: 2vw;
-        margin-top: 0.4vw;
-    }
-    
-    .a1{
-        color:black;
-    }
 
 }
 
-
-
-
-
-
-
-
-
-
-
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-    .shield{
-        width: 20vw;
-        height: 20vw ;
-    }
-    .img1{
-        width: 20vw;
-        height: 20vw ;
-    }
-    .img2{
-        width: 20vw;
-        height: 20vw ;
-    }
-
-    header figure{
-
-        position: absolute;
-        top: 1.333vw;
-        left: 2vw;
-        margin-right: auto;
-        margin-left: auto;
-    
-    }
-    
-    header{
-        padding-bottom: 6.667vw;
-    }
-    .row{
-        margin-left: 50vw;
-    }
-    header h1{
-
-       text-align: center;
-       padding-top: 7.333vw;
-       font-size: 7vw;
-       font-family: font_bold;
-       
-    }
-    
-    section h1{
-        margin-top: 1vw;
-        margin-left:auto;
-        margin-right:auto;
-        text-align:center;
-        font-size: 5vw;
-        font-family: font_bold;
-    
-    }
-    .div1{
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom:4vw;
-        margin-top:2.667vw;
-        height: 8.8vw;
-        width: 98.5vw;
-        border-style:solid;
-        border-width:0.267vw;
-        border-color: black;
-        border-radius: 3.333vw;
-    
-        background-color: #EEEDED;
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='26' viewBox='0 0 90 90'%3E%3Ccircle fill='%235267E2' cx='45' cy='45' r='5'/%3E%3Cg fill='%238A5FDA' fill-opacity='1'%3E%3Ccircle cx='0' cy='90' r='5'/%3E%3Ccircle cx='90' cy='90' r='5'/%3E%3Ccircle cx='90' cy='0' r='5'/%3E%3Ccircle cx='0' cy='0' r='5'/%3E%3C/g%3E%3C/svg%3E");
-    }
-    
-    
-    .div2{
-        margin-left: auto;
-        margin-right: auto;
-        margin-top:4vw;
-        background-color: lightgray;
-        height: 30vw;
-        width: 98.5vw;
-        border-style:solid;
-        border-width: 0.267vw;
-        border-color: black;
-        border-radius: 3.333vw;
-    
-        background-color: #EEEDED;
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='26' viewBox='0 0 90 90'%3E%3Ccircle fill='%235267E2' cx='45' cy='45' r='5'/%3E%3Cg fill='%238A5FDA' fill-opacity='1'%3E%3Ccircle cx='0' cy='90' r='5'/%3E%3Ccircle cx='90' cy='90' r='5'/%3E%3Ccircle cx='90' cy='0' r='5'/%3E%3Ccircle cx='0' cy='0' r='5'/%3E%3C/g%3E%3C/svg%3E");
-    }
-    
-    
-    
     .nav_bar{
         display:inline-block;
         background-color: aliceblue;
         text-align: center;
         color:black;
-        padding-left: 25vw;
-        padding-right: 20.9vw;
-        padding-bottom: 0.667vw;
-        padding-top: 0.667vw;
+        margin-top: -10vw;
+        padding-left: 27vw;
+        padding-right: 21.5vw;
+        padding-bottom: 1vw;
+        padding-top: 0.6vw;
         font-family:font_regular;
         bottom: 100vw;
         border-style:solid;
@@ -922,163 +440,4 @@ body{
     
     }
     
-    .nav_bar:hover{
-        background: rgba(138, 95, 218, 0.8);
-        color:white;
-        border-color: black;
-    }
-    
-    h2{
-        font-size: 2.667vw;
-        font-family: font_bold;
-        margin-left: 2vw;
-        margin-top: 0.4vw;
-        
-     }
-    
-     fieldset{
-         width:3vw;
-         height:6vw;
-         border-style:solid;
-         border-width:0.667vw;
-         border-color:black;
-         margin-left:auto;
-         margin-right:6vw;
-         margin-top: -0.043vw;
-         border-radius: 2vw;
-    
-     }
-    
-     legend {
-        font-size: 1.3em;
-        font-family: font_bold;
-        margin-left: 85vw;
-        margin-top: 0.5vw;
-         
-     }
-    
-    input{
-        margin-left: 10vw;
-        height: 2.667vw;
-        width: 25vw;
-        font-family: font_regular;
-        font-size: 2.667vw;
-        border-style: solid;
-        border-width:0.3vw;
-        border-color: black;
-        border-radius: 1vw;
-    }
-    
-    
-    
-    table{
-        font-family: font_bold;
-        width: 80vw;
-        margin-left:auto;
-        margin-right:auto;
-        margin-top: 4vw;
-        
-    
-    }
-    
-    table tr{
-        text-align: center;
-    }
-    
-    .td2{
-        padding-left:13vw;
-        
-    }
-    
-    .button1{
-        font-family: font_bold;
-        padding: 1vw;
-        border-radius: 2vw;
-        font-weight: 1vw;
-        font-size: 1.5vw;
-        cursor: pointer;
-        transition: .3s ease all;
-        overflow: hidden;
-        cursor: pointer;
-        transition: .3s ease all;
-        overflow: hidden;
-        border-color:black;
-        color:white;
-        background-color: rgb(82, 103, 226);
-    }
-    
-    .button1 span{
-        position:relative;
-        z-index:2;
-        transition: .3s ease all;
-    }
-    
-    .button1::after{
-        content:"";
-        width:100%;
-        height:300px;
-        background: #286cff;
-        position: absolute;
-        z-index:1;
-        top:-300px;
-        left:0;
-        transition: .4s ease-in-out all;
-        border-radius: 0px 0px 300px 300px;
-    }
-    
-    .button1:hover::after{
-        top:0;
-    }
-    
-    .button2{
-        font-family: font_bold;
-        padding: 1vw;
-        border-radius: 2vw;
-        font-weight: 1vw;
-        font-size: 1.5vw;
-        cursor: pointer;
-        transition: .3s ease all;
-        overflow: hidden;
-        cursor: pointer;
-        transition: .3s ease all;
-        overflow: hidden;
-        border-color:black;
-        color:white;
-        background-color: rgb(82, 103, 226);
-    }
-    
-    .button2 span{
-        position:relative;
-        z-index:2;
-        transition: .3s ease all;
-    }
-    
-    .button22::after{
-        content:"";
-        width:100%;
-        height:300px;
-        background: #286cff;
-        position: absolute;
-        z-index:1;
-        top:-300px;
-        left:0;
-        transition: .4s ease-in-out all;
-        border-radius: 0px 0px 300px 300px;
-    }
-    
-    .button2:hover::after{
-        top:0;
-    }
-    
-    
-    h3{
-        font-size: 1.5em;
-        font-family: font_bold;
-        margin-left: 2vw;
-        margin-top: 0.4vw;
-    }
-    
-    .a1{
-        color:black;
-    }
 }

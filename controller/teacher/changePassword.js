@@ -18,6 +18,25 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth();
 const database = getDatabase(app);
 
+onAuthStateChanged(auth, (user) => {
+    if (!user) {
+      Swal.fire({
+          title: 'No hay usuarios logueados',
+          icon: 'error',
+          confirmButtonColor: '#d33',
+          confirmButtonText: 'Ok',
+          allowOutsideClick: false,
+          allowEscapeKey: false,
+          allowEnterKey: false,
+          stopKeydownPropagation: false
+        }).then((result) => {
+          if (result.isConfirmed) {
+            window.location.href="/views/user/loginPage/loginPage.html";
+          }
+        });
+    } 
+  
+  });
 
 change.addEventListener('click',(e)=>{
     onAuthStateChanged(auth, (user) => {
