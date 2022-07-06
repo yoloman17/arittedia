@@ -4,50 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <link href="/views/teacher/designActivity/design_activity.css" rel="stylesheet">
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
     <title>Crear Actividad</title>
 </head>
 <body>
-    <header>
-
-    </header>
-    <section>
-        <div id="board" class = "div1">
-        </div>   
-    </section> 
-    <aside>
-        <div class = "div2">
-            <ion-icon name="man" class="character" id="character"></ion-icon>
-            <ion-icon name="add-circle" class="add" id="add"></ion-icon>
-            <ion-icon name="remove-circle" class="minus" id="minus"></ion-icon>
-            <ion-icon name="close-sharp" class="multiplication" id="multiplication"></ion-icon> 
-            <ion-icon name="pie-chart" class = "division" id="division"></ion-icon>
-            <ion-icon name="grid" class = "table" id="table"></ion-icon>
-            <ion-icon id="text" name="pencil" class="text" id="text"></ion-icon>
-            <ion-icon name="extension-puzzle" class = "puzzle" id="puzzle"></ion-icon>
-            <ion-icon name="help-circle" class = "help" id="help"></ion-icon>
-            <ion-icon name="map" class = "map" id="map"></ion-icon>
+    <div class="container">
+        <class div="row">
+            <div class="col">
+                <div id="mainBoard" class = "div1">
+                </div>   
+            </div> 
+            <div class="col">
+                <div class = "div2">
+                    <ion-icon name="man" class="character" id="character"></ion-icon>
+                    <ion-icon name="add-circle" class="add" id="add"></ion-icon>
+                    <ion-icon name="remove-circle" class="minus" id="minus"></ion-icon>
+                    <ion-icon name="close-sharp" class="multiplication" id="multiplication"></ion-icon> 
+                    <ion-icon name="pie-chart" class = "division" id="division"></ion-icon>
+                    <ion-icon name="grid" class = "table" id="table"></ion-icon>
+                    <ion-icon id="text" name="pencil" class="text" id="text"></ion-icon>
+                    <ion-icon name="extension-puzzle" class = "puzzle" id="puzzle"></ion-icon>
+                    <ion-icon name="help-circle" class = "help" id="help"></ion-icon>
+                    <ion-icon name="map" class = "map" id="map"></ion-icon>
+                </div>
+            </div>
+            <div class="col">
+                <div class = "div3">
+                    <ion-icon name="trash-bin-sharp" class="delete" id="delete"></ion-icon>
+                    <ion-icon name="hand-left-sharp" class="select" id="select"></ion-icon>
+                    <ion-icon name="cog-sharp" class="config" id="config"></ion-icon>
+                    <ion-icon name="play-circle" class="play" id="play"></ion-icon>
+                    <ion-icon name="stop" class="stop" id="stop"></ion-icon> 
+                </div>
+            </div>
         </div>
-    </aside>
-    <aside>
-        <div class = "div3">
-            <ion-icon name="trash-bin-sharp" class="delete" id="delete"></ion-icon>
-            <ion-icon name="hand-left-sharp" class="select" id="select"></ion-icon>
-            <ion-icon name="cog-sharp" class="config" id="config"></ion-icon>
-            <ion-icon name="play-circle" class="play" id="play"></ion-icon>
-            <ion-icon name="stop" class="stop" id="stop"></ion-icon> 
+        <div class="row"> 
+            <div class="col">
+                <button class="button1" id="saveActivity" ><span>Guardar Actividad</span></button>
+                <form action="/views/teacher/assignActivity/assignActivity.html"><button class="button2" id="assignActivity"><span>Asignar Actividad</span></button></form>
+                <button class="button3" id="finishActivity"><span>Finalizar actividad</span></button>
+            </div>
         </div>
-    </aside>
-    <div> 
-        <section>
-            <button class="button1" id="saveActivity" ><span>Guardar Actividad</span></button>
-            <button class="button2" id="assignActivity"><span>Asignar Actividad</span></button>
-            <button class="button3" id="finishActivity"><span>Finalizar actividad</span></button>
-        </section>
     </div>
-    <script type="module" src="/controller/teacher/designActivity.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script type="module" src="/controller/teacher/verify/verify.js"></script>
     <script src="/controller/teacher/play_stop/play_stop.js"></script>
 </body>
 </html>

@@ -16,52 +16,49 @@ body{
 
 
 .div1{
-    margin-left: 8%;
-    margin-top: 10%;
+    margin-left: 2.4vw;
+    margin-top: 10vw;
     background-color: lightgray;
-    height: 800px;
-    width: 1060px;
+    height: 65vw;
+    width: 82.5vw;
     border-style:solid;
-    border-width:5px;
+    border-width:0.4vw;
     border-color: black;
-    border-radius: 10px;
+    border-radius: 1.333vw;
     overflow-y: scroll;
 }
 
 .div2{
-    margin-top:-64%;
-    margin-left: 1%;
-    height: 799px;
-    width: 55px;
+    margin-top:-64.9vw;
+    margin-left: -4.5vw;
+    height: 65vw;
+    width: 5.1vw;
     border-style:dotted;
-    border-width:5px;
+    border-width:0.4vw;
     border-color: black;
-    border-radius: 10px;
-
+    border-radius: 1vw;
 }
 
 .div3{
-    margin-top:-63.8%;
-    margin-left: 94.5%;
-    height: 370px;
-    width: 55px;
+    margin-top:-64.8vw;
+    margin-left: 87vw;
+    height: 30vw;
+    width: 5.1vw;
     border-style:dotted;
-    border-width:5px;
+    border-width:0.4vw;
     border-color: black;
-    border-radius: 10px;
-
+    border-radius: 1vw;
 }
 
 .button1{
     font-family: font_bold;
-    padding: 18px;
+    padding: 1.5vw;
     position: absolute;
-    top: 133%;
-    right: 30%;
-    border-radius: 15px;
-    font-weight: 550;
-    font-size: 20px;
-    margin-bottom: 10%;
+    top: 80vw;
+    right: 30vw;
+    border-radius: 0.8vw;
+    font-weight: 1vw;
+    font-size: 1.5vw;
     margin-top: auto;
     margin-right: auto;
     margin-left: auto;
@@ -75,14 +72,13 @@ body{
 
 .button2{
     font-family: font_bold;
-    padding: 18px;
+    padding: 1.5vw;
     position: absolute;
-    top: 133%;
-    right: 50%;
-    border-radius: 15px;
-    font-weight: 550;
-    font-size: 20px;
-    margin-bottom: 10%;
+    top: 80vw;
+    right: 50vw;
+    border-radius: 0.8vw;
+    font-weight: 1vw;
+    font-size: 1.5vw;
     margin-top: auto;
     margin-right: auto;
     margin-left: auto;
@@ -96,14 +92,14 @@ body{
 
 .button3{
     font-family: font_bold;
-    padding: 18px;
+    padding: 1.5vw;
     position: absolute;
-    top: 133%;
-    right: 40%;
-    border-radius: 15px;
-    font-weight: 550;
-    font-size: 20px;
-    margin-bottom: 10%;
+    top: 80vw;
+    right: 40vw;
+    border-radius: 0.8vw;
+    font-weight: 1vw;
+    font-size: 1.5vw;
+    margin-bottom: 10vw;
     margin-top: auto;
     margin-right: auto;
     margin-left: auto;
@@ -118,8 +114,8 @@ body{
 
 
 .play{
-    width:50px;
-    height:50px;
+    width:4vw;
+    height:4vw;
     color:black;
     cursor:pointer;
     margin-top:30%;
@@ -127,16 +123,16 @@ body{
 }
 
 .stop{
-    width:50px;
-    height:50px;
+    width:4vw;
+    height:4vw;
     color:gray;
     margin-top:30%;
     margin-left: 5%;
 }
 
 .delete{
-    width:50px;
-    height:50px;
+    width:4vw;
+    height:4vw;
     color:black;
     cursor:pointer;
     margin-top:25%;
@@ -144,8 +140,8 @@ body{
 }
 
 .select{
-    width:50px;
-    height:50px;
+    width:4vw;
+    height:4vw;
     color:black;
     cursor:pointer;
     margin-top:40%;
@@ -153,8 +149,8 @@ body{
 }
 
 .config{
-    width:50px;
-    height:50px;
+    width:4vw;
+    height:4vw;
     color:black;
     cursor:pointer;
     margin-top:40%;
@@ -162,8 +158,8 @@ body{
 }
 
 .character{
-    width:50px;
-    height:50px;
+    width:4vw;
+    height:4vw;
     color:black;
     cursor:pointer;
     margin-top:40%;
@@ -171,8 +167,8 @@ body{
 }
 
 .add{
-    width:50px;
-    height:50px;
+    width:4vw;
+    height:4vw;
     color:black;
     cursor:pointer;
     margin-top:40%;
@@ -180,8 +176,8 @@ body{
 }
 
 .minus{
-    width:50px;
-    height:50px;
+    width:4vw;
+    height:4vw;
     color:black;
     cursor:pointer;
     margin-top:40%;
@@ -189,8 +185,8 @@ body{
 }
 
 .multiplication{
-    width:50px;
-    height:50px;
+    width:4vw;
+    height:4vw;
     color:black;
     cursor:pointer;
     margin-top:40%;
@@ -198,8 +194,8 @@ body{
 }
 
 .division{
-    width:50px;
-    height:50px;
+    width:4vw;
+    height:4vw;
     color:black;
     cursor:pointer;
     margin-top:40%;
@@ -207,8 +203,8 @@ body{
 }
 
 .text{
-    width:50px;
-    height:50px;
+    width:4vw;
+    height:4vw;
     color:black;
     cursor:pointer;
     margin-top:40%;
@@ -216,8 +212,8 @@ body{
 }
 
 .table{
-    width:50px;
-    height:50px;
+    width:4vw;
+    height:4vw;
     color:black;
     cursor:pointer;
     margin-top:40%;
@@ -225,8 +221,8 @@ body{
 }
 
 .puzzle{
-    width:50px;
-    height:50px;
+    width:4vw;
+    height:4vw;
     color:black;
     cursor:pointer;
     margin-top:40%;
@@ -234,8 +230,8 @@ body{
 }
 
 .help{
-    width:50px;
-    height:50px;
+    width:4vw;
+    height:4vw;
     color:black;
     cursor:pointer;
     margin-top:40%;
@@ -243,12 +239,109 @@ body{
 }
 
 .map{
-    width:50px;
-    height:50px;
+    width:4vw;
+    height:4vw;
     color:black;
     cursor:pointer;
     margin-top:40%;
     margin-left: 5%;
+}
+
+/* ----------------- Responsive ----------------------- */
+
+@media(max-width:1024px){
+    .div1{
+        height: 68vw;
+        width: 80vw;
+        margin-left: 5vw;
+    }
+
+    .div2{
+        margin-top:-67.8vw;
+        height: 67.8vw;
+        margin-left: -1vw;
+    }
+
+    .div3{
+        margin-top:-67.8vw;;
+        height: 32vw;
+    }
+
+}
+
+
+@media (max-width:768px){
+
+    .div1{
+        height: 68vw;
+        width: 80vw;
+        margin-left: 5vw;
+    }
+    
+    .div2{
+        margin-top:-67.8vw;
+        height: 67.8vw;
+        margin-left: -2.2vw;
+    }
+    
+    .div3{
+        margin-top:-67.8vw;;
+        height: 32vw;
+    }
+
+}
+
+@media (max-width:425px){
+    .div1{
+        width:80vw;
+        height:75vw;
+        margin-left: 6vw;
+    }
+    
+    .div2{
+        margin-top:-74.7vw;
+        margin-left: -1vw;
+        height: 74vw;
+    }
+    
+    .div3{
+        margin-top:-73.7vw;
+        height: 35vw;
+    }
+
+    .button1{
+        top: 90vw;
+        right: 30vw;
+    }
+    
+    
+    .button2{
+        top: 90vw;
+        right: 55vw;
+    }
+    
+    
+    .button3{
+        top: 90vw;
+        right: 44vw;
+    }
+}
+
+@media (max-width:375px){
+
+    .div1{
+        height:76vw;
+    }
+
+    .div2{
+        margin-top:-76vw;
+        height:76vw;
+    }
+
+    .div3{
+        margin-top:-76vw;
+    }
+ 
 }
 
 

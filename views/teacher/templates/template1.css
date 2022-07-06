@@ -8,51 +8,52 @@
     src: url(/fonts/font_regular.ttf);
 }
 
+
 .div4{
-    margin:30px;
+    margin:2.8vw;
     font-family: font_regular;
-    font-size: 30px;
+    font-size: 2.8vw;
 }
 
 .div5{
-    margin:20px;
+    margin:1.8vw;
     border-style: dotted;
-    border-radius: 5px;
+    border-radius: 0.667vw;
 }
 
 .complete{
     display:grid;
     grid-auto-flow:row;
     grid-template-columns: 19% 19% 19% 19% 19%;
-    grid-column-gap: 15px;
-    grid-row-gap: 15px;
+    grid-column-gap: 1.2vw;
+    grid-row-gap: 1.2vw;
     
 
 }
 
 .complete1{
-    width:150px;
-    margin:10px;
-    border-radius: 15px;
+    width:10vw;
+    margin:1.333vw;
+    border-radius: 2vw;
     border-color: black;
     font-family: font_regular;
-    font-size:20px;
+    font-size:1.8vw;
     background-color:white;
 }
 
 
 .div6{
-    margin:30px;
+    margin:2.8vw;
     font-family: font_regular;
-    font-size: 30px;   
+    font-size: 2.8vw;   
 }
 
 .div7{
-    margin:20px;
+    margin:1.8vw;
     display:grid;
     grid-template-columns: 25% 25% 25% 25% ;
-    grid-column-gap: 15px;
-    grid-row-gap: 80%;
+    grid-column-gap: 1.5vw;
+    grid-row-gap: 15vw;
 }
 
 .div8{
@@ -75,65 +76,65 @@
 }
 
 .div12{
-    margin-top: -50%; 
+    margin-top: -72%; 
 }
 
 .div13{
-    margin-top: -47%; 
+    margin-top: -68%; 
 }
 
 .div14{
-    margin-top: -47%;
+    margin-top: -67%;
 }
 
 .div15{
-    margin-top: -45%;
+    margin-top: -65%;
 }
 
 .div16{
-    margin-top: -46%;
+    margin-top: -70%;
 }
 
 .div17{
-    margin-top: -44%;
+    margin-top: -66%;
 }
 
 .div18{
-    margin-top: -44.5%;
+    margin-top: -64.4%;
 }
 
 .div19{
-    margin-top: -42%;
+    margin-top: -62%;
 }
 
 .operation{
-    margin:3px;
+    margin:0.4vw;
     display:grid;
     grid-auto-flow:row;
     grid-template-columns: 25% 25% 25%;
-    grid-column-gap: 10px;
-    grid-row-gap: 15px;    
+    grid-column-gap: 1vw;
+    grid-row-gap: 1vw;    
 }
 
 .number1{
     border-style:solid;
     border-color: black;
-    border-radius: 15px;
+    border-radius: 2vw;
     font-family: font_regular;
-    font-size:20px;
+    font-size:1.8vw;
     text-align: center;
-    width:50px;
+    width:4vw;
     background-color: white;
     color:black;
 }
 
 .fa-plus{
-    font-size: 30px;
-    margin-left:-10%;
+    font-size: 2.5vw;
+    margin-left:-15%;
 }
 
 .fa-minus{
-    font-size: 20px;
+    font-size: 1.8vw;
     margin-left: -10%;    
 }
 
@@ -141,14 +142,192 @@ hr{
     width: 85%;
     margin-left: 1%;
     margin-bottom: -5%;
-    border-color: black;
+    border: 0.15vw solid darkslategrey;
 
 }
 
 audio{
-    margin-top:3%;
-    margin-left: 35%;
+    margin-left: 30vw;
 }
+
+/* ----------------- Responsive ----------------------- */
+
+@media(max-width:1024px){
+
+    .div12{
+        margin-top: -78%; 
+    }
+    
+    .div13{
+        margin-top: -72%; 
+    }
+    
+    .div14{
+        margin-top: -72%;
+    }
+    
+    .div15{
+        margin-top: -68%;
+    }
+    
+    .div16{
+        margin-top: -75%;
+    }
+    
+    .div17{
+        margin-top: -70%;
+    }
+    
+    .div18{
+        margin-top: -70%;
+    }
+    
+    .div19{
+        margin-top: -66%;
+    }
+
+    audio{
+        margin-left: 28vw;
+    } 
+}
+
+@media (max-width:768px){
+
+    .div12{
+        margin-top: -89%; 
+    }
+    
+    .div13{
+        margin-top: -85%; 
+    }
+    
+    .div14{
+        margin-top: -85%;
+    }
+    
+    .div15{
+        margin-top: -80%;
+    }
+    
+    .div16{
+        margin-top: -90%;
+    }
+    
+    .div17{
+        margin-top: -85%;
+    }
+    
+    .div18{
+        margin-top: -86%;
+    }
+    
+    .div19{
+        margin-top: -81%;
+    }
+
+    audio{
+        margin-left: 23vw;
+        height:4vw;
+    } 
+
+}
+
+@media (max-width:425px){
+
+    .div7{
+        grid-row-gap: 25vw;
+    }
+    .div12{
+        margin-top: -142%; 
+    }
+    
+    .div13{
+        margin-top: -135%; 
+    }
+    
+    .div14{
+        margin-top: -137%;
+    }
+    
+    .div15{
+        margin-top: -130%;
+    }
+    
+    .div16{
+        margin-top: -142%;
+    }
+    
+    .div17{
+        margin-top: -135%;
+    }
+    
+    .div18{
+        margin-top: -135%;
+    }
+    
+    .div19{
+        margin-top: -129%;
+    }
+
+    .button1{
+        top: 90vw;
+        right: 30vw;
+    }
+    
+    
+    .button2{
+        top: 90vw;
+        right: 55vw;
+    }
+    
+    
+    .button3{
+        top: 90vw;
+        right: 44vw;
+    }
+
+    audio{
+        margin-left: 15vw;
+        height:4vw;
+        width: 50vw;
+    } 
+}
+
+@media (max-width:375px){
+    .div12{
+        margin-top: -157%; 
+    }
+    
+    .div13{
+        margin-top: -149%; 
+    }
+    
+    .div14{
+        margin-top: -150%;
+    }
+    
+    .div15{
+        margin-top: -142%;
+    }
+    
+    .div16{
+        margin-top: -160%;
+    }
+    
+    .div17{
+        margin-top: -150%;
+    }
+    
+    .div18{
+        margin-top: -151%;
+    }
+    
+    .div19{
+        margin-top: -142%;
+    }
+ 
+}
+
 
 
 

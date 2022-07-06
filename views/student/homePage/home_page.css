@@ -14,46 +14,24 @@ body{
     src: url(/fonts/font_regular.ttf);
 }
 
-.shield{
-    width: 18vw;
-    height: 20vw ;
-}
-.img1{
-    width: 20vw;
-    height: 20vw ;
-}
-.img2{
-    width: 20vw;
-    height: 20vw ;
-}
-
-header figure{
-
+#img1{
     position: absolute;
     top: 1.333vw;
     left: 2vw;
     margin-right: auto;
     margin-left: auto;
-
 }
 
-header{
-    padding-bottom: 6.667vw;
-}
-.row{
-    margin-left: 50vw;
-}
-header h1{
-    margin-left: 1vw;
+h1{
    text-align: center;
    padding-top: 5vw;
    font-size: 10vw;
    font-family: font_bold;
-   
+   margin-left: 10vw;
 }
 
-section h1{
-    margin-top: 1vw;
+.tittle1{
+    margin-top: 1.5vw;
     margin-left:auto;
     margin-right:auto;
     text-align:center;
@@ -83,7 +61,7 @@ section h1{
     margin-right: auto;
     margin-top:4vw;
     background-color: lightgray;
-    height: 30vw;
+    height: 50vw;
     width: 98.5vw;
     border-style:solid;
     border-width: 0.267vw;
@@ -102,9 +80,9 @@ section h1{
     text-align: center;
     color:black;
     margin-top: -10vw;
-    padding-left: 24vw;
+    padding-left: 24.8vw;
     padding-right: 21vw;
-    padding-bottom: 1vw;
+    padding-bottom: 0.8vw;
     padding-top: 0.6vw;
     font-family:font_regular;
     bottom: 100vw;
@@ -126,44 +104,41 @@ h2{
     margin-left: 2vw;
     margin-top: 0.4vw;
     
- }
+}
 
- .fieldset1{
-    width: 10vw;
-    height: 20vw;
+fieldset{
+    width:3.333vw;
+    height:4vw;
     border-style:solid;
-    border-width:0.66;
+    border-width:0.4vw;
     border-color:black;
-    border-radius: 2vw;
+    margin-left:auto;
+    margin-right:4vw;
+    margin-top: -4vw;
+    border-radius: 1vw;
 
- }
+}
 
- .field{
-    margin-left: 80vw;
-    margin-top: -1vw;
- }
-
- legend {
-    font-size: 1.3vw;
+legend {
+    font-size: 1.8vw;
     font-family: font_bold;
-    left: 85vw;
-    margin-top: 0.5vw;
-     
- }
+    margin-left: 2vw;
+    margin-top: 0.133vw;  
+}
 
-.input1{
-    left: 90vw;
-    height: 1.5vw;
-    width: 10vw;
+input{
+    margin-left: 0.107vw;
+    height: 1.7vw;
+    width: 17vw;
+    margin-right:auto;
+    margin-left:auto;
     font-family: font_regular;
-    font-size: 1vw;
+    font-size: 1.5vw;
     border-style: solid;
-    border-width:0.25vw;
+    border-width:0.4vw;
     border-color: black;
     border-radius: 1vw;
 }
-
-
 
 table{
     font-family: font_bold;
@@ -171,8 +146,6 @@ table{
     margin-left:auto;
     margin-right:auto;
     margin-top: 4vw;
-    
-
 }
 
 table tr{
@@ -207,23 +180,6 @@ table tr{
     transition: .3s ease all;
 }
 
-.button1::after{
-    content:"";
-    width:100%;
-    height:300px;
-    background: #286cff;
-    position: absolute;
-    z-index:1;
-    top:-300px;
-    left:0;
-    transition: .4s ease-in-out all;
-    border-radius: 0px 0px 300px 300px;
-}
-
-.button1:hover::after{
-    top:0;
-}
-
 .button2{
     font-family: font_bold;
     padding: 1vw;
@@ -247,197 +203,144 @@ table tr{
     transition: .3s ease all;
 }
 
-.button22::after{
-    content:"";
-    width:100%;
-    height:300px;
-    background: #286cff;
-    position: absolute;
-    z-index:1;
-    top:-300px;
-    left:0;
-    transition: .4s ease-in-out all;
-    border-radius: 0px 0px 300px 300px;
-}
-
-.button2:hover::after{
-    top:0;
-}
-
-
 h3{
-    font-size: 1.5em;
+    font-size: 2.5vw;
     font-family: font_bold;
     margin-left: 2vw;
     margin-top: 0.4vw;
 }
 
 .a1{
-    color:black;
+    color:white;
 }
 
 
+/* ----------------- Responsive ----------------------- */
 
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+
+@media (max-width:1024px){
+
     .nav_bar{
-        display:inline-block;
-        background-color: aliceblue;
-        text-align: center;
-        color:black;
-        margin-top: -10vw;
-        padding-left: 20vw;
-        padding-right: 20vw;
-        padding-bottom: 1vw;
-        padding-top: 0.6vw;
-        font-family:font_regular;
-        bottom: 100vw;
-        border-style:solid;
-        text-decoration:none;
-        border-radius: 1.333vw;
+        padding-left: 23.7vw;
     }
-    .fieldset1{
-        margin-left: 1vw;
-        width:1vw;
-        height:1vw;
-        border-style:solid;
-        border-width:0.66;
-        border-color:black;
-        border-radius: 2vw;
-    }
-    .div1{
-        width: 103.5vw;
+
+    input{
+        margin-left: 0.107vw;
+        height: 1.3vw;
     }
 
     .div2{
-        width: 103.5vw;
+        height: 50vw;    
     }
 
-    header h1{
-        margin-left: 10vw;  
-    }
 }
 
+@media (max-width:768px){
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+    #img1{
+        width:17vw; 
+        height:22vw;
+    }
+
     .nav_bar{
-        display:inline-block;
-        background-color: aliceblue;
-        text-align: center;
-        color:black;
-        margin-top: -10vw;
-        padding-left: 21vw;
-        padding-right: 20vw;
-        padding-bottom: 1vw;
-        padding-top: 0.6vw;
-        font-family:font_regular;
-        bottom: 100vw;
-        border-style:solid;
-        text-decoration:none;
-        border-radius: 1.333vw;
+        padding-left: 22vw;
     }
-        .fieldset1{
-            margin-left: 1vw;
-            width:1vw;
-            height:1vw;
-            border-style:solid;
-            border-width:0.66;
-            border-color:black;
-            border-radius: 2vw;
-        }
-        .div1{
-            width: 103.5vw;
-        }
 
-        .div2{
-            width: 103.5vw;
-        }
-        header h1{
-            margin-left: 10vw;  
-        }
+    fieldset{
+        width:7vw;
+        height:5vw;    
+    }
+    input{
+        height: 1.5vw;
+        width: 25vw;
+    }
+
+    legend {
+        font-size: 2.773vw; 
+    }
+
+    .div2{
+        height: 50vw;    
+    }
 }
 
+@media (max-width:425px){
+    #img1{
+        width:32vw; 
+        height:37vw;
+    }
 
+    h1{
+        margin-left: 50vw;
+        margin-bottom: 20vw;
+     }
 
-
-
-
-
-
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
     .nav_bar{
-        display:inline-block;
-        background-color: aliceblue;
+        margin-top: 1vw;
         text-align: center;
-        color:black;
-        margin-top: -10vw;
-        padding-left: 21vw;
-        padding-right: 22vw;
-        padding-bottom: 1vw;
-        padding-top: 0.6vw;
-        font-family:font_regular;
-        bottom: 100vw;
-        border-style:solid;
-        text-decoration:none;
-        border-radius: 1.333vw;
-    
-    }
-    .fieldset1{
-        margin-left: 1vw;
-        width:1vw;
-        height:1vw;
-        border-style:solid;
-        border-width:0.66;
-        border-color:black;
-        border-radius: 2vw;
+        width:102vw;
     }
 
+    .div1{
+        width: 145vw;
+        margin-top: 5vw;
+        border-width:0.7vw;
+    }
+
+    .div2{
+        width: 145vw;
+        height: 50vw;    
+    }
+
+    fieldset{
+        width:7vw;
+        height:6vw;
+        border-width:0.7vw;    
+    }
+
+    input{
+        border-width:0.7vw;
+    }
+
+    .button1{
+        font-size: 3vw;
+    }
+
+    .button2{
+        font-size: 3vw;
+    }
+
+    h2{
+        font-size: 3.5vw; 
+    }
+
+    h3{
+        font-size: 3.5vw;
+    }
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+@media (max-width:375px){
+
+    h1{
+        margin-left: 65vw;
+     }
+
     .nav_bar{
-        display:inline-block;
-        background-color: aliceblue;
-        text-align: center;
-        color:black;
-        margin-top: -10vw;
-        padding-left: 23vw;
-        padding-right: 21.5vw;
-        padding-bottom: 1vw;
-        padding-top: 0.6vw;
-        font-family:font_regular;
-        bottom: 100vw;
-        border-style:solid;
-        text-decoration:none;
-        border-radius: 1.333vw;
-    
+        width:121vw;
     }
 
+    .div1{
+        width: 164vw;
+    }
+
+    .div2{
+        width: 164vw;    
+    }
+    h3{
+        font-size: 4vw; 
+    }   
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-    .nav_bar{
-        display:inline-block;
-        background-color: aliceblue;
-        text-align: center;
-        color:black;
-        margin-top: -10vw;
-        padding-left: 27vw;
-        padding-right: 21.5vw;
-        padding-bottom: 1vw;
-        padding-top: 0.6vw;
-        font-family:font_regular;
-        bottom: 100vw;
-        border-style:solid;
-        text-decoration:none;
-        border-radius: 1.333vw;
-    
-    }
-    
-}
+
+

@@ -4,7 +4,6 @@ import { getAuth, createUserWithEmailAndPassword} from "https://www.gstatic.com/
 import { getDatabase,set,ref} from "https://www.gstatic.com/firebasejs/9.6.11/firebase-database.js";
 
 
-
 const firebaseConfig = {
     apiKey: "AIzaSyBn40G81kdADOJHVvYd0Xdt2Bd9SvQQrYQ",
     authDomain: "arittedia.firebaseapp.com",
@@ -33,8 +32,10 @@ register.addEventListener('click',(e) => {
     var options=document.getElementsByTagName("option");
     var email = document.getElementById('email').value;
     var password = document.getElementById('password').value;
-    var confirm_password = document.getElementById('confirm_password').value
+    var confirm_password = document.getElementById('confirm_password').value;
     var encrypt_password = encPass(password.value);
+
+    
 
     if((password==confirm_password)&&((options[select.value-1].innerHTML)!='Elige una opción')
         && (verify()==true)){
@@ -169,9 +170,6 @@ function encPass(password){
     var encrypted = btoa(password);
     return encrypted
 }
-
-
-
 
 
 
