@@ -16,7 +16,7 @@ body{
 
 
 .div1{
-    margin-left: 2.4vw;
+    margin-left: 3.5vw;
     margin-top: 10vw;
     background-color: lightgray;
     height: 65vw;
@@ -30,7 +30,7 @@ body{
 
 .div2{
     margin-top:-64.9vw;
-    margin-left: -4.5vw;
+    margin-left: -2.7vw;
     height: 65vw;
     width: 5.1vw;
     border-style:dotted;
@@ -248,6 +248,43 @@ body{
 }
 
 /* ----------------- Responsive ----------------------- */
+
+@media (max-width:1290px){
+    .div1{
+        margin-left: 2.4vw;
+        margin-top: 10vw;
+        background-color: lightgray;
+        height: 65vw;
+        width: 82.5vw;
+        border-style:solid;
+        border-width:0.4vw;
+        border-color: black;
+        border-radius: 1.333vw;
+        overflow-y: scroll;
+    }
+    
+    .div2{
+        margin-top:-64.9vw;
+        margin-left: -4.5vw;
+        height: 65vw;
+        width: 5.1vw;
+        border-style:dotted;
+        border-width:0.4vw;
+        border-color: black;
+        border-radius: 1vw;
+    }
+    
+    .div3{
+        margin-top:-64.8vw;
+        margin-left: 87vw;
+        height: 30vw;
+        width: 5.1vw;
+        border-style:dotted;
+        border-width:0.4vw;
+        border-color: black;
+        border-radius: 1vw;
+    }  
+}
 
 @media(max-width:1024px){
     .div1{

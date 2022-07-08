@@ -1,5 +1,5 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.11/firebase-app.js";
-import { getDatabase,set,ref,child,get} from "https://www.gstatic.com/firebasejs/9.6.11/firebase-database.js";
+import { getDatabase,set,ref,child,get,update} from "https://www.gstatic.com/firebasejs/9.6.11/firebase-database.js";
 import { getAuth,onAuthStateChanged} from "https://www.gstatic.com/firebasejs/9.6.11/firebase-auth.js";
 
 const firebaseConfig = {
@@ -16,6 +16,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const database = getDatabase(app);
 const auth = getAuth();
+var activities=[];
 
 //------------------get buttons------------------
 
@@ -36,7 +37,7 @@ assignActivity.addEventListener('click',(e)=>{
       onAuthStateChanged(auth, (user) => {
         if (user) {
           const dbref=ref(database);
-          get(child(dbref,'user/Teacher/'+user.uid+'/Activity/'+assignNameActivity.toLowerCase()))
+          get(child(dbref,'Activity/'+assignNameActivity.toLowerCase()))
           .then((snapshot)=>{
               if(snapshot.exists()){
                 Swal.fire({
@@ -58,6 +59,7 @@ assignActivity.addEventListener('click',(e)=>{
                 }).then((result) => {
                   if (result.isConfirmed) {
                     setData();
+                    setIdactivity()
                     localStorage.removeItem("template1");
                     localStorage.removeItem("boardTemplate1");
                     window.location.href="/views/teacher/homePage/homePage.html";
@@ -148,13 +150,16 @@ function setData(){
     if (user) {
       const uid = user.uid;
       
-      set(ref(database,'user/Teacher/'+user.uid+'/Activity/'+assignNameActivity.toLowerCase()+'/'),{
+      set(ref(database,'Activity/'+assignNameActivity.toLowerCase()+'/'),{
         Nombre_actividad: assignNameActivity,
         Fecha_inicio: startDate,
         Fecha_fin: finishDate,
         Hora_inicio: startHour,
         Hora_fin: finishHour,
-        Actividad: boardTemplate1
+        Actividad: boardTemplate1,
+        Uid_teacher: user.uid,
+        link: addActivity(),
+        Estado: "Asignada"
       });
   
     }
@@ -167,6 +172,70 @@ function setData(){
       form.reset();
     } 
   });
+
+}
+
+//------------------set Idactivity------------------
+
+function setIdactivity(){
+  var assignNameActivity=document.getElementById('assignNameActivity').value;
+  onAuthStateChanged(auth, (user) => {
+    if (user) {
+      const uid = user.uid;
+      const dbref=ref(database);
+      
+      get(child(dbref,'Activity'))
+      .then((snapshot)=>{
+        if(snapshot.exists()){
+          if(snapshot.val().Actividad_asignada!=null){
+            for(var i=0;i<snapshot.val().Actividad_asignada.length;i++){
+              activities.push(snapshot.val().Actividad_asignada[i]);
+            }
+          }
+          
+        }
+        activities.push(assignNameActivity);
+        update(ref(database, 'Activity'), {
+          Actividad_asignada: activities
+        });
+      });
+
+    }
+    else{
+      Swal.fire({
+        title:'ARITTEDIA',
+        text: 'No hay usuarios logueados',
+        icon: 'error'
+      })
+      form.reset();
+    } 
+  });
+}
+
+//------------------add activity------------------
+
+function addActivity(){
+  var assignNameActivity=document.getElementById('assignNameActivity').value;
+  var html;
+
+  if(assignTemplete1=='true'){
+    html="<div id="+"activity"+">"+
+        "<h2>"+assignNameActivity+"</h2>"+
+        "<a href = "+"/views/teacher/templates/template1/AssignTemplate1.html"+" target="+"_blank"+"><ion-icon name="+"extension-puzzle-outline"+" class="+"puzzle"+"></ion-icon></a>"+
+      "</div>"
+  }
+
+  
+  /*
+  if(localStorage.getItem("activity")!=null){
+    activities=JSON.parse(localStorage.getItem("activity"));
+  }
+  
+  activities.push(assignNameActivity);
+  localStorage.setItem("activity",JSON.stringify(activities));
+  */
+
+  return html;
 
 }
 

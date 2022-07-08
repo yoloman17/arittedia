@@ -83,7 +83,7 @@ h1{
 }
 
 #img2{
-    margin-left: -0.8vw;
+    margin-left: 0.2vw;
     margin-right: auto;
 }
 
@@ -147,10 +147,10 @@ div input{
     border-radius: 1.333vw;
 }
 
- .button0{
+.button0{
     font-family: font_bold;
     position: absolute;
-    top: 93.9vw;
+    top: 90.8vw;
     right: 15.7vw;
     margin-bottom: auto;
     margin-top: auto;
@@ -261,7 +261,16 @@ div input{
 
 /* ----------------- Responsive ----------------------- */
 
+@media (max-width:1290px){
+    #img2{
+        margin-left: -0.8vw;
+        margin-right: auto;
+    }
 
+    .button0{
+        top: 93.9vw;
+    }
+}
 
 @media (max-width:1024px){
 
