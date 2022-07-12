@@ -13,7 +13,7 @@ else{
 
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.11/firebase-app.js";
 import { getDatabase,ref,child,get} from "https://www.gstatic.com/firebasejs/9.6.11/firebase-database.js";
-import { getAuth} from "https://www.gstatic.com/firebasejs/9.6.11/firebase-auth.js";
+import { getAuth, onAuthStateChanged} from "https://www.gstatic.com/firebasejs/9.6.11/firebase-auth.js";
 
 const firebaseConfig = {
     apiKey: "AIzaSyBn40G81kdADOJHVvYd0Xdt2Bd9SvQQrYQ",
@@ -30,20 +30,75 @@ const app = initializeApp(firebaseConfig);
 const database = getDatabase(app);
 const auth = getAuth();
 
-var activity=[];
+var activities=[];
+var nameActivities;
 
-if(localStorage.getItem("activity")!=null){
-    activity=JSON.parse(localStorage.getItem("activity"));
-    for(var i=0;i<activity.length;i++){
-        const dbref=ref(database);
-        get(child(dbref,'Activity/'+activity[i].toLowerCase()))
-        .then((snapshot)=>{
-            if(snapshot.exists()){
-                listAddAssignActivityTeacher.insertAdjacentHTML('afterend',snapshot.val().link);
+onAuthStateChanged(auth, (user) => {
+  if (user) {
+    const dbref=ref(database);
+    const uid = user.uid;
+    get(child(dbref,'user/Teacher/'+user.uid+'/'))
+    .then((snapshot)=>{
+        if(snapshot.exists()){
+          if(snapshot.val().Actividad_asignada!=null){
+            for(var i=0;i<snapshot.val().Actividad_asignada.length;i++){
+              activities.push(snapshot.val().Actividad_asignada[i]);
+              get(child(dbref,'Activity/'+activities[i]))
+              .then((snapshot)=>{
+                  if(snapshot.exists()){
+                      if(snapshot.val().Uid_teacher==user.uid){
+
+                        //------------------Create Elements-------------------------
+                        const activity=document.createElement('div');
+                        const tittleActivity=document.createElement('h2');
+                        const puzzle=document.createElement('ion-icon');
+                        const link=document.createElement('a');
+                        const start=document.createElement('h4');
+                        const finish=document.createElement('h4');
+
+                        //listAddAssignActivityTeacher.insertAdjacentHTML('afterend',snapshot.val().link);
+
+                        //------------------Assign values-------------------------
+                        activity.className="activity";
+                        puzzle.className="puzzle";
+                        start.className="start";
+                        finish.className="finish";
+
+                        tittleActivity.textContent=snapshot.val().Nombre_actividad;
+                        link.href=snapshot.val().link;
+                        puzzle.name="extension-puzzle-outline";
+                        start.textContent="Inicio: "+snapshot.val().Hora_inicio+" "+snapshot.val().Fecha_inicio;
+                        finish.textContent="Fin: "+snapshot.val().Hora_fin+" "+snapshot.val().Fecha_fin;
+
+                        //------------------Add elemtns-------------------------
+                        listAddAssignActivityTeacher.appendChild(activity);
+                        activity.appendChild(tittleActivity);
+                        activity.appendChild(puzzle);
+                        activity.appendChild(link);
+                        activity.appendChild(start);
+                        activity.appendChild(finish);
+                        link.appendChild(puzzle);
+
+
+                        //------------------Add elemtns-------------------------
+                        puzzle.addEventListener('click',(e)=>{
+                          nameActivities=snapshot.val().Nombre_actividad.toLowerCase()+snapshot.val().Fecha_fin+
+                          snapshot.val().Hora_fin+snapshot.val().Fecha_inicio+snapshot.val().Hora_inicio;
+
+                          localStorage.setItem('nameActivities',nameActivities);
+                        })
+
+                      }
+                  }
+              })
+                
             }
-        });
-    }
-}
+          }
+        }
+    });
+  }
+});
+
 
 
 

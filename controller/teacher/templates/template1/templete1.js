@@ -1,4 +1,3 @@
-
 var num1=0,num2=0,result=0;
 //Activity 1
 let activity1=[10];

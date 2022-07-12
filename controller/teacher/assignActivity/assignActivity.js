@@ -17,6 +17,7 @@ const app = initializeApp(firebaseConfig);
 const database = getDatabase(app);
 const auth = getAuth();
 var activities=[];
+var activitiesStudent=[];
 
 //------------------get buttons------------------
 
@@ -30,6 +31,7 @@ var boardTemplate1=localStorage.getItem("boardTemplate1");
 //------------------assign activity------------------
 
 assignActivity.addEventListener('click',(e)=>{
+  var cont=0;
   if(assignTemplete1=='true'){
     //prueba.insertAdjacentHTML('afterend',boardTemplate1);
     if(verify()==true){
@@ -37,42 +39,34 @@ assignActivity.addEventListener('click',(e)=>{
       onAuthStateChanged(auth, (user) => {
         if (user) {
           const dbref=ref(database);
-          get(child(dbref,'Activity/'+assignNameActivity.toLowerCase()))
+          const uid = user.uid;
+          get(child(dbref,'user/Teacher/'+user.uid+'/'))
           .then((snapshot)=>{
               if(snapshot.exists()){
-                Swal.fire({
-                  title:'ARITTEDIA',
-                  text: 'El nombre que ingresate ya está en uso',
-                  icon: 'error'
-                })
-                form.reset(); 
-              }
-              else if(verifyDate()==true){
-                Swal.fire({
-                  title: '¿Estás seguro que quieres asignar esta actividad?',
-                  icon: 'warning',
-                  showCancelButton: true,
-                  confirmButtonColor: '#3085d6',
-                  cancelButtonColor: '#d33',
-                  cancelButtonText: 'Cancelar',
-                  confirmButtonText: 'Sí, asígnala!'
-                }).then((result) => {
-                  if (result.isConfirmed) {
-                    setData();
-                    setIdactivity()
-                    localStorage.removeItem("template1");
-                    localStorage.removeItem("boardTemplate1");
-                    window.location.href="/views/teacher/homePage/homePage.html";
+                if(snapshot.val().Actividad_asignada!=null){
+                  for(var i=0;i<snapshot.val().Actividad_asignada.length;i++){
+                    if(snapshot.val().Actividad_asignada[i]==assignNameActivity.toLowerCase()){
+                      cont++;
+                      Swal.fire({
+                        title:'ARITTEDIA',
+                        text: 'El nombre que ingresate ya está en uso',
+                        icon: 'error'
+                      })
+                      form.reset(); 
+                    }
                   }
-                });
-              }
-              else if(verifyDate()!=true){
-                Swal.fire({
-                  title:'ARITTEDIA',
-                  text: 'La fecha que ingresaste es incorrecta',
-                  icon: 'error'
-                })
-                form.reset();  
+                }
+                if((verifyDate()==true)&&(cont==0)){
+                  confirmMessage();
+                }
+                if(verifyDate()!=true){
+                  Swal.fire({
+                    title:'ARITTEDIA',
+                    text: 'La fecha que ingresaste es incorrecta',
+                    icon: 'error'
+                  })
+                  form.reset();  
+                }
               }
           });
         }
@@ -117,6 +111,42 @@ function verify(){
   
 }
 
+//------------------ConfirmMessage------------------
+
+function confirmMessage(){
+  Swal.fire({
+    title: '¿Estás seguro que quieres asignar esta actividad?',
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonColor: '#3085d6',
+    cancelButtonColor: '#d33',
+    cancelButtonText: 'Cancelar',
+    confirmButtonText: 'Sí, asígnala!'
+  }).then((result) => {
+    if (result.isConfirmed) {
+      setData();
+      setIdActivity();
+      setIdActivityStudent();
+      localStorage.removeItem("template1");
+      localStorage.removeItem("boardTemplate1");
+      Swal.fire({
+        title: 'Tu actividad ya fue asignada',
+        icon: 'success',
+        confirmButtonColor: '#3085d6',
+        confirmButtonText: 'Ok',
+        allowOutsideClick: false,
+        allowEscapeKey: false,
+        allowEnterKey: false,
+        stopKeydownPropagation: false
+      }).then((result) => {
+        if (result.isConfirmed) {
+          window.location.href="/views/teacher/homePage/homePage.html";
+        }
+      });
+    }
+  });
+}
+
 //------------------verify Dates------------------
 
 function verifyDate(){
@@ -150,7 +180,7 @@ function setData(){
     if (user) {
       const uid = user.uid;
       
-      set(ref(database,'Activity/'+assignNameActivity.toLowerCase()+'/'),{
+      set(ref(database,'Activity/'+assignNameActivity.toLowerCase()+finishDate+finishHour+startDate+startHour+'/'),{
         Nombre_actividad: assignNameActivity,
         Fecha_inicio: startDate,
         Fecha_fin: finishDate,
@@ -163,79 +193,81 @@ function setData(){
       });
   
     }
-    else{
-      Swal.fire({
-        title:'ARITTEDIA',
-        text: 'No hay usuarios logueados',
-        icon: 'error'
-      })
-      form.reset();
-    } 
   });
 
 }
 
-//------------------set Idactivity------------------
+//------------------set IdactivityStudent------------------
 
-function setIdactivity(){
+function setIdActivityStudent(){
   var assignNameActivity=document.getElementById('assignNameActivity').value;
+  var startDate=document.getElementById('startDate').value;
+  var finishDate=document.getElementById('finishDate').value;
+  var startHour=document.getElementById('startHour').value;
+  var finishHour=document.getElementById('finishHour').value;
   onAuthStateChanged(auth, (user) => {
     if (user) {
       const uid = user.uid;
       const dbref=ref(database);
-      
-      get(child(dbref,'Activity'))
+      get(child(dbref,'user/Student/'))
       .then((snapshot)=>{
         if(snapshot.exists()){
           if(snapshot.val().Actividad_asignada!=null){
             for(var i=0;i<snapshot.val().Actividad_asignada.length;i++){
-              activities.push(snapshot.val().Actividad_asignada[i]);
+              activitiesStudent.push(snapshot.val().Actividad_asignada[i].toLowerCase());
             }
           }
-          
         }
-        activities.push(assignNameActivity);
-        update(ref(database, 'Activity'), {
+        activitiesStudent.push(assignNameActivity.toLowerCase()+finishDate+finishHour+startDate+startHour);
+        update(ref(database, 'user/Student/'), {
+          Actividad_asignada: activitiesStudent
+        });
+      });
+    } 
+    
+  });
+}
+//------------------set Idactivity------------------
+
+function setIdActivity(){
+  var assignNameActivity=document.getElementById('assignNameActivity').value;
+  var startDate=document.getElementById('startDate').value;
+  var finishDate=document.getElementById('finishDate').value;
+  var startHour=document.getElementById('startHour').value;
+  var finishHour=document.getElementById('finishHour').value;
+  onAuthStateChanged(auth, (user) => {
+    if (user) {
+      const uid = user.uid;
+      const dbref=ref(database);
+      get(child(dbref,'user/Teacher/'+user.uid+'/'))
+      .then((snapshot)=>{
+        if(snapshot.exists()){
+          if(snapshot.val().Actividad_asignada!=null){
+            for(var i=0;i<snapshot.val().Actividad_asignada.length;i++){
+              activities.push(snapshot.val().Actividad_asignada[i].toLowerCase());
+            }
+          }
+        }
+        activities.push(assignNameActivity.toLowerCase()+finishDate+finishHour+startDate+startHour);
+        update(ref(database, 'user/Teacher/'+user.uid+'/'), {
           Actividad_asignada: activities
         });
       });
-
-    }
-    else{
-      Swal.fire({
-        title:'ARITTEDIA',
-        text: 'No hay usuarios logueados',
-        icon: 'error'
-      })
-      form.reset();
     } 
+    
   });
 }
 
 //------------------add activity------------------
 
 function addActivity(){
-  var assignNameActivity=document.getElementById('assignNameActivity').value;
-  var html;
+  var link;
 
   if(assignTemplete1=='true'){
-    html="<div id="+"activity"+">"+
-        "<h2>"+assignNameActivity+"</h2>"+
-        "<a href = "+"/views/teacher/templates/template1/AssignTemplate1.html"+" target="+"_blank"+"><ion-icon name="+"extension-puzzle-outline"+" class="+"puzzle"+"></ion-icon></a>"+
-      "</div>"
+    link="/views/teacher/templates/template1/AssignTemplate1.html"
   }
 
-  
-  /*
-  if(localStorage.getItem("activity")!=null){
-    activities=JSON.parse(localStorage.getItem("activity"));
-  }
-  
-  activities.push(assignNameActivity);
-  localStorage.setItem("activity",JSON.stringify(activities));
-  */
-
-  return html;
+  return link;
 
 }
 
