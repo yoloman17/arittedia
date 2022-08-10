@@ -199,3 +199,37 @@ form input{
     }
 
 }
+
+@media (max-width:320px){
+
+    .div1{
+        
+        height: 120vw;        
+    }
+
+    .input1{
+        position: absolute;
+    }
+
+
+    .button1{
+        top:150vw;
+    }
+
+}
+
+/******************** RESPONSIVE HORIZONTAL ******************/
+
+@media (max-height:768px) and (max-width:670px) and (orientation: landscape){
+    #img2{
+        width:35vw; 
+        height:35vw;
+    }
+    .button1{
+        top:103vw;
+    }
+    .div1{
+        
+        height: 90vw;        
+    }
+}

@@ -27,6 +27,17 @@ var assignTemplete1=localStorage.getItem("template1");
 
 var boardTemplate1=localStorage.getItem("boardTemplate1");
 
+//------------------close window------------------
+
+window.addEventListener('beforeunload',function(e){
+  e.preventDefault();
+  e.returnValue='';
+  if(e.cancelable==true){
+    localStorage.removeItem("template1");
+    localStorage.removeItem("boardTemplate1");
+  }
+
+})
 
 //------------------assign activity------------------
 

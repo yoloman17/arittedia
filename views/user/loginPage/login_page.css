@@ -248,7 +248,15 @@ form select{
 
 }
 
+/*****************************RESPONSIVE HORIZONTAL*************************************/
 
+@media (max-height:768px) and (max-width:670px){
+    #img2{
+        width:25vw; 
+        height:25vw;
+    }
+
+}
 
 
 

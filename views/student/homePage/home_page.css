@@ -342,5 +342,63 @@ h3{
     }   
 }
 
+@media (max-width:320px){
+    #img1{
+        width:320vw; 
+        height:370vw;
+    }
+
+    h1{
+        margin-left: 48vw;
+        font-size: 20vw;
+     }
+
+    .nav_bar{
+        width:151vw;
+    }
+
+    .div1{
+        width: 194vw;
+    }
+
+    .div2{
+        width: 194vw;    
+    }
+    h3{
+        font-size: 5vw; 
+    }   
+}
+
+
+/*************** RESPONSIVE HORIZONTAL *************************/
+
+@media (max-height:768px) and (max-width:670px){
+    #img1{
+        width:17vw; 
+        height:22vw;
+    }
+
+    .nav_bar{
+        padding-left: 21vw;
+    }
+
+    fieldset{
+        width:7vw;
+        height:5vw;    
+    }
+    input{
+        height: 1.5vw;
+        width: 25vw;
+    }
+
+    legend {
+        font-size: 2.773vw; 
+    }
+
+    .div2{
+        height: 50vw;    
+    }
+
+}
 
 

@@ -74,7 +74,7 @@ change.addEventListener('click',(e)=>{
             if(verify()==true){
                 if(new_password==confirm_password){
                     Swal.fire({
-                        title: '¿Estás seguro que cambiar tu contraseña?',
+                        title: '¿Estás seguro que quieres cambiar tu contraseña?',
                         icon: 'warning',
                         showCancelButton: true,
                         confirmButtonColor: '#3085d6',
@@ -112,7 +112,7 @@ change.addEventListener('click',(e)=>{
             else{
                 Swal.fire({
                     title:'ARITTEDIA',
-                    text: 'Debe llenar todos los campos',
+                    text: 'Debes llenar todos los campos',
                     icon: 'error'
                 });
                 form.reset();   

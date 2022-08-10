@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://kit.fontawesome.com/54ee98608b.js" crossorigin="anonymous"></script>
     <link href="/views/teacher/designActivity/design_activity.css" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     
     <title>Crear Actividad</title>
@@ -16,6 +18,34 @@
         <div class="row">
             <div class="col">
                 <div id="mainBoard" class = "div1">
+                    <div class="div8" id="ball">
+                        <div>
+                            <input type="number" value="5" class="number1" id="num1" min="0" max="999">
+                            </input>
+                            <input type="number" value="5" class="number1" id="num2" min="0" max="999">
+                            </input>
+                            <input type="number" value="7" class="number1" id="num3" min="0" max="999">
+                            </input>             
+                        </div>
+                        <div>
+                            <input type="number" value="1" class="number1" id="num5" min="0" max="999">
+                            </input>
+                            <input type="number" value="2" class="number1" id="num6" min="0" max="999">
+                            </input>  
+                        </div>
+                        <hr>
+                        <div>
+                            <input type="number" class="number1" id="num7" min="0" max="999" disabled="false">
+                            </input>
+                            <input type="number" class="number1" id="num8" min="0" max="999" disabled="false">
+                            </input>
+                            <input type="number" class="number1" id="num9" min="0" max="999" disabled="false">
+                            </input>               
+                        </div>
+                        <div class="div12">
+                            <i class="fa-regular fa-plus"></i>
+                        </div>
+                    </div>
                 </div>   
             </div> 
             <div class="col">
@@ -54,5 +84,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <script type="module" src="/controller/teacher/verify/verify.js"></script>
     <script src="/controller/teacher/play_stop/play_stop.js"></script>
+    <script src="/controller/teacher/add/add.js"></script>
+    <script src="/controller/teacher/createActivity/probar.js"></script>
 </body>
 </html>

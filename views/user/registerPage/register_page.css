@@ -238,3 +238,49 @@ form select{
     }
 
 }
+
+@media (max-width:320px){
+
+    h1{
+        padding-top: 15vw;
+        padding-bottom: 12vw;
+    }
+
+    form input{
+        
+        position: absolute;
+    }
+
+    .div1{
+        
+        height: 180vw;        
+    }
+
+    .button1{
+        top:210vw;
+        border-width:0.4vw;
+    }
+    
+    form select{
+        position:absolute;
+    }
+
+}
+
+/*****************************RESPONSIVE HORIZONTAL**************************/
+
+@media (max-height:768px) and (max-width:670px) and (orientation: landscape){
+    #img1{
+        width:17vw; 
+        height:22vw;
+    }
+
+    .div1{
+        height: 120vw;   
+    }
+
+    .button1{
+        top:130vw;
+    }
+
+}

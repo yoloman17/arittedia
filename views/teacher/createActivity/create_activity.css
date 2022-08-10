@@ -300,3 +300,23 @@ fieldset figure{
     }
   
 }
+
+/******************* RESPONSIVE HORIZONTAL ***********************/
+
+@media (max-height:768px) and (max-width:670px) and (orientation: landscape){
+
+    #img1{
+        width:17vw; 
+        height:22vw;
+    }
+
+    h1{
+        margin-left: 10vw;
+     }
+
+     .nav_bar{
+        padding-right: 8.3vw;
+    }
+
+}
+

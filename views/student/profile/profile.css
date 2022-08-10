@@ -507,6 +507,134 @@ div input{
   
 }
 
+@media (max-width:320px){
 
+    h1{
+        margin-left: 55vw;
+        font-size: 15vw;
+     }
+
+    .nav_bar{
+        width:120vw;
+    }
+
+    div input{
+        width: 135vw;
+    }
+
+    .div1{
+        width: 164vw;
+    }
+
+    .div2{
+        height: 195vw;
+        width: 164vw;     
+    }
+
+    .pick{
+        width:65vw;
+    }
+
+    #img2{
+        height: 65vw;
+        width: 65vw;
+    }
+    
+    .button0{
+        top: 239.5vw;
+        right: -62.5vw;
+    }
+
+    .button1{
+        top: 96.5vw;
+        right: -26.5vw;
+    }
+
+    .label1{
+        margin-left: 76vw;
+    }
+    
+    .label2{
+        margin-left: 69vw;
+    }
+    
+    .label3{
+        margin-left: 74vw; 
+    }
+
+    .button2{
+        top: 268vw;
+        right:50vw;
+        font-size: 4vw;
+    }
+
+    .button3{
+        top: 268vw;
+        right:-50vw;
+        font-size: 4vw;
+        
+    }
+  
+}
+
+/************************ RESPONSIVE HORIZONTAL ***************************/
+
+@media (max-height:768px) and (max-width:670px) and (orientation: landscape){
+    #img1{
+        width:18vw; 
+        height:22vw;
+    }
+
+    .nav_bar{
+        padding-left: 21vw;
+    }
+
+    .pick{
+        width:30vw;
+    }
+
+    #img2{
+        height: 32vw;
+        width: 32vw;
+    }
+
+    .button0{
+        top: 121.5vw;
+        right: 15vw;
+        height: 19px;
+        width: 25px;
+    }
+
+    .button1{
+        top: 53.8vw;
+        right: 28vw;
+        height: 19px;
+        width: 25px;
+    }
+
+    #img3{
+        width:12px; 
+        height:12px;
+    }
+
+    #img4{
+        width:12px; 
+        height:12px;
+    }
+
+    .div2{
+        height: 95vw;
+    }
+
+    .button2{
+        top: 135vw;
+    }
+
+    .button3{
+        top: 135vw;
+    }
+
+
+}
 
 

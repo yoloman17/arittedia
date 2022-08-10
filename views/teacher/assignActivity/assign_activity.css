@@ -291,3 +291,32 @@ h2{
     }
 
 }
+
+@media (max-width:320px){
+
+    .mainDiv{
+        height: 140vw;       
+    }
+
+    .button1{
+        top:170vw;
+    }
+
+}
+
+/******************** RESPONSIVE HORIZONTAL ******************/
+
+@media (max-height:768px) and (max-width:670px) and (orientation: landscape) {
+    #img2{
+        width:35vw; 
+        height:35vw;
+    }
+
+    .button1{
+        top:117vw;
+    }
+
+    .mainDiv{
+        height: 103vw;       
+    }
+}

@@ -1,7 +1,7 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.11/firebase-app.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.11/firebase-analytics.js";
-import { getAuth, createUserWithEmailAndPassword} from "https://www.gstatic.com/firebasejs/9.6.11/firebase-auth.js";
-import { getDatabase,set,ref} from "https://www.gstatic.com/firebasejs/9.6.11/firebase-database.js";
+import { getAuth, createUserWithEmailAndPassword, sendEmailVerification } from "https://www.gstatic.com/firebasejs/9.6.11/firebase-auth.js";
+import { getDatabase, set, ref } from "https://www.gstatic.com/firebasejs/9.6.11/firebase-database.js";
 
 
 const firebaseConfig = {
@@ -44,6 +44,7 @@ register.addEventListener('click',(e) => {
                 // Signed in
                 const user = userCredential.user;
                 // ... user.uid
+                sendEmailVerification(auth.currentUser);
                 if(options[select.value-1].innerHTML=='Profesor'){
                     set(ref(database, 'user/Teacher/' + user.uid), {
                         Nombre: name,
@@ -59,7 +60,7 @@ register.addEventListener('click',(e) => {
                             toast: true,
                             position: 'top-end',
                             showConfirmButton: false,
-                            timer: 300000,
+                            timer: 10000,
                             timerProgressBar: true,
                             didOpen: (toast) => {
                               toast.addEventListener('mouseenter', Swal.stopTimer)
@@ -69,7 +70,7 @@ register.addEventListener('click',(e) => {
                           
                           Toast.fire({
                             icon: 'success',
-                            title: 'Usuario registrado de forma correcta'
+                            title: 'Usuario registrado de forma correcta. Ahora verifica tu correo'
                           }) 
                         form.reset();               
                     })
@@ -94,7 +95,7 @@ register.addEventListener('click',(e) => {
                             toast: true,
                             position: 'top-end',
                             showConfirmButton: false,
-                            timer: 3000,
+                            timer: 10000,
                             timerProgressBar: true,
                             didOpen: (toast) => {
                               toast.addEventListener('mouseenter', Swal.stopTimer)
@@ -103,7 +104,7 @@ register.addEventListener('click',(e) => {
                           })
                           Toast.fire({
                             icon: 'success',
-                            title: 'Usuario registrado de forma correcta'
+                            title: 'Usuario registrado de forma correcta. Ahora verifica tu correo'
                           }) 
                         form.reset();                    
                     })

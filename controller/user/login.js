@@ -27,66 +27,87 @@ login.addEventListener('click',(e)=>{
     var options=document.getElementsByTagName("option");
     var rol;
     var encrypt_password = encPass(password.value);
-
     signInWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
         // Signed in
         const user = userCredential.user;
         const last_login=Date();
         const dbref=ref(database);
+        
         if((options[select.value-1].innerHTML)=='Profesor'){
-            get(child(dbref,'user/Teacher/' + user.uid))
-            .then((snapshot)=>{
-                if(snapshot.exists()){
-                    rol=snapshot.val().Rol;
-                    update(ref(database, 'user/Teacher/' + user.uid), {
-                        Último_ingreso: last_login,
-                        Contraseña: encrypt_password,
+            if(getAuth().currentUser.emailVerified){
+                get(child(dbref,'user/Teacher/' + user.uid))
+                .then((snapshot)=>{
+                    if(snapshot.exists()){
+                        rol=snapshot.val().Rol;
+                        update(ref(database, 'user/Teacher/' + user.uid), {
+                            Último_ingreso: last_login,
+                            Contraseña: encrypt_password,
+                        }
+                        ).then(()=>{
+                            window.location.href="/views/teacher/homePage/homePage.html";                
+                        })
                     }
-                    ).then(()=>{
-                        window.location.href="/views/teacher/homePage/homePage.html";                
-                    })
-                }
-                else{
-                    Swal.fire({
-                        title:'ARITTEDIA',
-                        text: 'El usuario no es profesor',
-                        icon: 'error'
-                    });
-                    form.reset(); 
-                }
-            })
-            .catch((error)=>{
-                alert('error1');
-            }); 
+                    else{
+                        Swal.fire({
+                            title:'ARITTEDIA',
+                            text: 'El usuario no es profesor',
+                            icon: 'error'
+                        });
+                        form.reset(); 
+                    }
+                })
+                .catch((error)=>{
+                    alert('error1');
+                }); 
+            }
+            else{
+                Swal.fire({
+                    title:'ARITTEDIA',
+                    text: 'El profesor no ha verificado la cuenta',
+                    icon: 'error'
+                });
+                form.reset(); 
+            }
+
         } 
             
         else if((options[select.value-1].innerHTML)=='Estudiante'){
-            get(child(dbref,'user/Student/' + user.uid))
-            .then((snapshot)=>{
-                if(snapshot.exists()){
-                    rol=snapshot.val().Rol;
-                    update(ref(database, 'user/Student/' + user.uid), {
-                        Último_ingreso: last_login,
-                        Contraseña: encrypt_password,
+            if(getAuth().currentUser.emailVerified){
+                get(child(dbref,'user/Student/' + user.uid))
+                .then((snapshot)=>{
+                    if(snapshot.exists()){
+                        rol=snapshot.val().Rol;
+                        update(ref(database, 'user/Student/' + user.uid), {
+                            Último_ingreso: last_login,
+                            Contraseña: encrypt_password,
+                        }
+                        ).then(()=>{
+                            window.location.href="/views/student/homePage/homePage.html";                 
+                        })
+                        
                     }
-                    ).then(()=>{
-                        window.location.href="/views/student/homePage/homePage.html";                 
-                    })
-                    
-                }
-                else{
-                    Swal.fire({
-                        title:'ARITTEDIA',
-                        text: 'El usuario no es estudiante',
-                        icon: 'error'
-                    });
-                    form.reset();  
-                }
-            })
-            .catch((error)=>{
-                alert('error2');
-            }); 
+                    else{
+                        Swal.fire({
+                            title:'ARITTEDIA',
+                            text: 'El usuario no es estudiante',
+                            icon: 'error'
+                        });
+                        form.reset();  
+                    }
+                })
+                .catch((error)=>{
+                    alert('error2');
+                });
+            }
+            else{
+                Swal.fire({
+                    title:'ARITTEDIA',
+                    text: 'El estudiante no ha verificado la cuenta',
+                    icon: 'error'
+                });
+                form.reset();    
+            } 
         }
         else if((options[select.value-1].innerHTML)=='Elige una opción'){
             Swal.fire({
@@ -102,7 +123,7 @@ login.addEventListener('click',(e)=>{
         const errorMessage = error.message;
         Swal.fire({
             title:'ARITTEDIA',
-            text: 'El correo, el rol o la contraseña son incorrectos',
+            text: 'El correo o la contraseña son incorrectos',
             icon: 'error'
         });
         form.reset();
