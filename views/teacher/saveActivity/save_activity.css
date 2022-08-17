@@ -209,10 +209,21 @@ form input{
 }
 
 @media (max-width:320px){
-    #img2{
-        width:30vw; 
+
+    #img1{
+        width:25vw; 
         height:30vw;
+        margin-left: 1vw;
+        top: -5vw;
+        
     }
+
+    #img2{
+        width:55vw; 
+        height:70vw;
+    }
+
+    
 
     form input{
         font-size: 1.8vw;
@@ -221,15 +232,17 @@ form input{
 
     .div1{
         
-        height: 70vw;        
+        height: 1000vw;        
     }
 
     .button1{
-        top:115vw;
+        top:180vw;
         border-width:0.4vw;
     }
 
 }
+
+
 
 
 /************************ RESPONSIVE HORIZONTAL *********************/

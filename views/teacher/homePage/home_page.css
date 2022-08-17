@@ -448,8 +448,16 @@ h3{
 
 @media (max-width:320px){
 
+    #img1{
+        margin-left: 110vw;
+        width:70vw; 
+        height:80vw;
+    }
+
     h1{
-        margin-left: 115vw;
+        margin-top: 90vw;
+        margin-left: 75vw;
+        font-size: 30vw;
      }
 
     .nav_bar{
@@ -459,10 +467,12 @@ h3{
 
     .div1{
         width: 283vw;
+        height: 10vw;
     }
 
     .div2{
-        width: 283vw;    
+        width: 283vw;
+        height: 120vw;    
     }
     h3{
         font-size: 8vw; 

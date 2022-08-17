@@ -510,7 +510,7 @@ div input{
 @media (max-width:320px){
 
     h1{
-        margin-left: 55vw;
+        margin-left: 48vw;
         font-size: 15vw;
      }
 
@@ -527,27 +527,28 @@ div input{
     }
 
     .div2{
-        height: 195vw;
+        height: 250vw;
         width: 164vw;     
     }
 
     .pick{
-        width:65vw;
+        width:80vw;
+        height: 95vw;
     }
 
     #img2{
-        height: 65vw;
-        width: 65vw;
+        height: 90vw;
+        width: 83vw;
     }
     
     .button0{
-        top: 239.5vw;
+        top: 267.5vw;
         right: -62.5vw;
     }
 
     .button1{
         top: 96.5vw;
-        right: -26.5vw;
+        right: -34.5vw;
     }
 
     .label1{
@@ -563,13 +564,13 @@ div input{
     }
 
     .button2{
-        top: 268vw;
+        top: 315vw;
         right:50vw;
         font-size: 4vw;
     }
 
     .button3{
-        top: 268vw;
+        top: 315vw;
         right:-50vw;
         font-size: 4vw;
         

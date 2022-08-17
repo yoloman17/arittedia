@@ -248,6 +248,43 @@ form select{
 
 }
 
+@media (max-width:320px){
+    #img1{
+        width:25vw; 
+        height:30vw;
+        margin-left: 32vw;
+        top: -5vw;
+        
+    }
+
+
+
+    h1{
+        margin-top: 22vw;
+        font-size: 10vw;
+        margin-left: -5vw;
+
+    }    
+
+    .div1{
+        margin-top: -9vw;
+        height: 140vw;        
+    }
+
+    .input1{
+        position: absolute;
+    }
+
+    form select{
+        position:absolute;
+    }
+
+    .button1{
+        top:180vw;
+    }
+
+}
+
 /*****************************RESPONSIVE HORIZONTAL*************************************/
 
 @media (max-height:768px) and (max-width:670px){

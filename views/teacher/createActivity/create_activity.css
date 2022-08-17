@@ -301,6 +301,57 @@ fieldset figure{
   
 }
 
+@media (max-width:320px){
+
+    h1{
+        margin-left: 85vw;
+        font-size: 15vw;
+     }
+
+    .nav_bar{
+        width:218vw;
+    }
+
+    #img2{
+        margin-top: -15vw;
+        width: 120vw;
+        height: 130vw;
+    }
+
+    legend{
+        font-size: 10vw;
+    }
+
+    fieldset{
+        width: 120vw;
+        height: 130vw;
+    }
+
+    .div1{
+        width: 243vw;
+    }
+
+    .div2{
+        width: 243vw;
+        height: 180vw;    
+    }
+
+    .h2_1{
+        font-size: 6vw;
+    }
+
+    .h2_2{
+        font-size: 6vw;
+    }
+
+    .puzzle{
+        margin-left: 8vw;
+        width: 40vw;
+        height: 50vw;
+    }
+  
+}
+
 /******************* RESPONSIVE HORIZONTAL ***********************/
 
 @media (max-height:768px) and (max-width:670px) and (orientation: landscape){

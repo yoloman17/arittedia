@@ -427,6 +427,58 @@ hr{
  
 }
 
+@media (max-width:320px){
+
+    .div1{
+        height:170vw;
+    }
+
+    .div2{
+        margin-top:-170vw;
+        height:76vw;
+    }
+
+    .div3{
+        margin-top:-170vw;
+    }
+
+    .button1{
+        top: 190vw;
+        right: 30vw;
+    }
+
+    .button2{
+        top: 190vw;
+        right: 55vw;
+    }
+    
+ 
+}
+
+/****************** RESPONSIVE HORIZONTAL **************************/
+
+@media (max-height:768px) and (max-width:670px) and (orientation: landscape){
+
+    .div1{
+        height: 68vw;
+        width: 100vw;
+        margin-left: 1vw;
+    }
+    
+    .div2{
+        margin-top:-67.8vw;
+        height: 67.8vw;
+        margin-left: -10vw;
+    }
+    
+    .div3{
+        margin-top:-67.5vw;
+        margin-left: 105vw;
+        height: 32vw;
+    }
+
+}
+
 
 
 

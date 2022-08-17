@@ -207,6 +207,44 @@ form input{
 
 }
 
+@media (max-width: 320px){
+    #img1{
+        width:25vw; 
+        height:30vw;
+        margin-left: 1vw;
+        top: -5vw;
+        
+    }
+
+    #img2{
+        width:55vw; 
+        height:70vw;
+    }
+
+    h1{
+        margin-top: 25vw;
+        font-size: 70vw;
+        margin-left: -5vw;
+
+    }  
+
+    form input{
+        font-size: 1.8vw;
+        position: absolute;
+    }
+
+    .div1{
+        
+        height: 125vw;        
+    }
+
+    .button1{
+        top:170vw;
+        border-width:0.4vw;
+    }
+
+}
+
 /******************* RESPONSIVE HORIZONTAL************************/
 
 @media (max-height:768px) and (max-width:670px) and (orientation: landscape){
